@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Progresso local</title></head><body>
+<script>
+(function () {
+  'use strict';
+  var values = {}, available = true;
+  var KEY = /^(progresso(-[a-z0-9]+)?|tema)$/;  // one progress key per course, plus the theme
+  try {
+    for (var i = 0; i < localStorage.length; i++) {
+      var name = localStorage.key(i);
+      if (name.indexOf('curso.') === 0 && KEY.test(name.slice(6))) values[name.slice(6)] = JSON.parse(localStorage.getItem(name));
+    }
+  } catch (_) { available = false; }
+  window.addEventListener('message', function (event) {
+    var data = event.data;
+    if (event.source !== parent || !data || data.courseStorage !== 'write' || !KEY.test(data.key)) return;
+    try { localStorage.setItem('curso.' + data.key, JSON.stringify(data.value)); }
+    catch (_) { parent.postMessage({courseStorage:'storage-error'}, '*'); }
+  });
+  parent.postMessage({courseStorage:'snapshot', values:values, available:available}, '*');
+}());
+</script>
+</body></html>

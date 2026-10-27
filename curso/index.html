@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Sua trilha</title>
+  <link rel="stylesheet" href="assets/curso.css">
+  <script src="cursos.js"></script>
+  <script src="assets/comum.js"></script>
+  <script src="assets/trilha.js" defer></script>
+</head>
+<body>
+  <div class="shell">
+    <header class="site-header"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span id="brand-title"></span><span class="brand-tag">O CURSO</span></a><button class="icon-button theme-toggle" aria-label="Alternar entre modo claro e escuro" title="Alternar tema">◐</button></header>
+    <main id="main">
+      <nav id="course-picker" class="course-picker" aria-label="Escolha seu curso"></nav>
+      <section class="hero"><p class="eyebrow">DO RACIOCÍNIO À AUTONOMIA</p><h1 id="course-title"></h1><p id="course-subtitle"></p></section>
+      <section id="stats" class="stats" aria-label="Seu progresso"></section>
+      <aside id="resume" class="resume-panel"></aside>
+      <div class="trail-heading"><div><p class="eyebrow">UM PASSO DE CADA VEZ</p><h2>Sua trilha</h2></div><label class="switch-label"><input id="unlock" type="checkbox" role="switch"><span class="switch" aria-hidden="true"></span>Liberar todas</label></div>
+      <p class="muted small">“Liberar todas” permite pular entre as aulas prontas.</p>
+      <div id="trail"></div>
+      <p id="storage-notice" class="notice" role="status" hidden></p>
+    </main>
+    <footer class="site-footer">Um passo de cada vez. Pratique e retome quando quiser.<br><span>Seu progresso fica salvo por curso.</span></footer>
+  </div>
+  <noscript>Ative o JavaScript no navegador para abrir a trilha e fazer os exercícios.</noscript>
+</body>
+</html>

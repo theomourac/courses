@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Sua aula</title>
+  <link rel="stylesheet" href="assets/curso.css">
+  <script src="cursos.js"></script>
+  <script src="assets/comum.js"></script>
+  <script src="assets/ilustracoes.js" defer></script>
+  <script src="assets/diagramas.js" defer></script>
+  <script src="assets/codigo.js" defer></script>
+  <script src="assets/player.js" defer></script>
+</head>
+<body class="player-page">
+  <div class="shell player-shell">
+    <header class="player-header"><a class="icon-button close" href="index.html" aria-label="Sair da aula e voltar à trilha" title="Voltar à trilha">×</a><div class="progress-wrap"><div class="progress-meta"><span id="lesson-label">Sua aula</span><span id="progress-label">Preparando…</span></div><progress id="progress" max="100" value="0" aria-label="Progresso da aula"></progress></div><button id="ask-toggle" class="icon-button ask-toggle" aria-label="Tirar uma dúvida sobre esta tela" aria-expanded="false" aria-controls="ask-panel" title="Tirar dúvida">?</button><button class="icon-button theme-toggle" aria-label="Alternar entre modo claro e escuro" title="Alternar tema">◐</button></header>
+    <main id="player" aria-label="Cartão da aula"><p>Preparando sua aula…</p></main>
+    <p id="storage-notice" class="notice" role="status" hidden></p>
+    <footer id="actions" class="actions"></footer>
+  </div>
+  <noscript>Ative o JavaScript no navegador para fazer esta aula.</noscript>
+</body>
+</html>

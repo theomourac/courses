@@ -1,0 +1,12 @@
+[project]
+name = "courses"
+version = "0.1.0"
+description = "Cursos de estudo para prova, um cartão por tela (Contabilidade Gerencial e People Skills)."
+requires-python = ">=3.11"
+dependencies = []
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

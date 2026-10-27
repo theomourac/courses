@@ -1,0 +1,329 @@
+PLATAFORMA DO CURSO — REGISTRO DE VERIFICAÇÃO
+ATUALIZAÇÃO — DOIS CURSOS E EXERCÍCIOS PYTHON (13/10/2026)
+
+O que foi construído:
+- Escolha de curso com todos os itens de C.cursos e curso atual destacado por
+  cor, texto e aria-current. Marca, título e apresentação usam C.curso e
+  window.CURSO. Títulos das páginas acompanham o curso e a aula.
+- C.link(pagina, aula) mantém o comportamento anterior; o terceiro argumento
+  opcional, courseId, permite trocar de curso pela mesma função. Foram
+  preservados o carregamento por URL, as chaves de progresso, a sincronização,
+  o tema e a ponte de armazenamento para file:// de comum.js.
+- assets/codigo.js: trechos codigo e saida em cartões e exercícios, com realce
+  simples de Python (palavras-chave, strings, números e comentários). O texto
+  é escapado antes de virar HTML. Cada bloco tem rolagem interna e rótulo.
+- Exercícios codigo em prática e desafio: enunciado, problema, número, link
+  seguro em nova aba, exemplos, explicações e restrições. Editor monoespaçado
+  com números de linha sincronizados; Tab/Shift+Tab inclusive em seleções;
+  Enter mantém o recuo e soma quatro espaços depois de dois-pontos;
+  Ctrl/Cmd+Enter roda. Esc seguido de Tab sai do editor pelo teclado.
+- Rascunhos são salvos enquanto se digita no progresso do curso, por índice
+  original do cartão. Restaurar o código inicial, voltar, recarregar e pular
+  mantêm o estado coerente. Respostas assíncronas não invadem outro cartão,
+  nem permitem duplicar o envio quando o aluno volta ao editor em execução.
+- Rodar e Enviar usam executar com curso/aula/cartao/codigo/envio. Os exemplos
+  de uma função não liberam Continuar: é preciso o aceite do envio completo.
+  No modo saída, passar ao Rodar já libera. Resultado em aria-live mostra
+  veredito em português e termo do LeetCode, testes, valores, prints, caso que
+  falhou, erros com linha/trecho e desempenho (segundos, limite e tamanhos).
+  Quando o servidor omite detalhes de testes ocultos ou tamanho/tempo após
+  interrupção, a interface informa a ausência, sem inventar valores.
+- Dicas em três degraus acumulados, via dica, com fallback para as dicas da
+  aula; sem_dicas elimina a seção. Após o aceite: explicação, complexidade,
+  revisão (bom, melhorar, tempo, espaco, porque) e referência somente leitura.
+  Antes disso, a referência exige três envios malsucedidos (três execuções
+  no modo saída) e uma confirmação explícita dentro do cartão.
+- Pular por agora coloca o cartão no fim, sem perder rascunho nem tentativas.
+  XP: 10 sem envio errado anterior, 5 após erro, 20 no desafio, uma única vez.
+  Falhas de conexão/HTTP não contam como respostas erradas. Editar uma solução
+  aceita exige conferir a nova versão antes de continuar ou pedir revisão.
+- Por file://, sem conexão ou com 403, informa como abrir o servidor, libera
+  referência e Continuação, sem conceder XP por código não executado.
+- Lia ganhou SVG autoral com óculos, cabelos grisalhos e notebook, no mesmo
+  estilo do elenco. Os personagens anteriores foram preservados.
+- CSS usa tokens existentes nos temas claro/escuro, colunas minmax(0, 1fr),
+  blocos limitados ao contêiner e rolagem interna do editor/código. Não esconde
+  overflow da página para disfarçar problemas de largura.
+
+Verificação executada:
+- node --check passou em todos os sete .js/.cjs de assets/. CSS analisado com
+  CSSOM: 351 regras. git diff --check passou nos caminhos da entrega.
+- 85 verificações em assets/verificar-codigo.cjs passaram: DOM simulado com
+  LinkeDOM e API real de executar do servidor fornecido na porta 8876.
+- Casos reais: saída errada/correta, função que passa nos exemplos sem liberar,
+  solução lenta com tempo excedido, referência aceita e tamanho 50.000 para
+  cada lista, erro de sintaxe, divisão por zero com linha e print, estrutura
+  ausente e falha em teste oculto. O desafio real foi aceito com 20 XP.
+- Verificados: atalhos, recuo em seleção e no começo da linha, rascunho na
+  recarga, restauração, gate/confirmar/cancelar referência, XP sem duplicação,
+  retorno ao cartão com pedido pendente, isolamento de curso, fila de revisão,
+  conclusão persistida, escape de HTML e alternância claro/escuro.
+- Dicas/revisão foram testadas com respostas de API simuladas, incluindo os
+  campos e corpos enviados, três níveis, fallback, sem_dicas e falhas. O
+  serviço de IA externo não foi acionado. file://, desconexão, 403 e 502 foram
+  simulados; o 502 não conta como tentativa errada nem libera por aceite.
+- Regressão: index.html SEM parâmetros e aula.html?aula=01 carregados no DOM;
+  quatro partes, 13 aulas, links, quadrinhos e navegação preservados. Aula 00
+  antiga percorrida até o fim com os cinco tipos de prática, um erro e revisão,
+  desafio escrito, autoavaliação, 65 XP e retomada após recarga. As duas páginas
+  antigas e as novas também responderam HTTP 200 no servidor real.
+- Nenhum progresso de teste foi enviado ao banco do aluno. Nenhuma mudança
+  desta tarefa em cursos.js, aulas/, leetcode/aulas/, dados/ ou tools/.
+
+Como repetir os testes (na raiz do repositório):
+  PYTHONDONTWRITEBYTECODE=1 uv run python curso/tools/servidor.py --porta 8876
+  node curso/assets/verificar-codigo.cjs
+O verificador usa a instalação já existente de LinkeDOM em
+.tmp/curso-diagramas/node_modules/linkedom. Se ela não existir, indique uma
+instalação local por CURSO_TEST_DOM=/caminho/absoluto/para/linkedom.
+CURSO_TEST_URL permite usar outra porta. Nenhuma dependência foi acrescentada
+à plataforma: o verificador não é carregado pelo navegador.
+
+Limite da conferência visual nesta atualização:
+O controle do navegador retornou “Browser is not available: chrome” e o acesso
+ao aplicativo retornou “Computer Use was not approved to use Google Chrome”.
+Não foi possível abrir as páginas em um navegador real nem medir a largura
+da página a 375px. O CSS foi preparado para esse tamanho, mas aparência,
+rolagem interna real, file:// real e anúncio por leitor de tela ainda exigem
+essa conferência. DOM simulado e HTTP 200 não comprovam layout visual.
+
+Os registros abaixo são históricos e não descrevem todas as capacidades atuais.
+
+Data: 12/10/2026
+
+ATUALIZAÇÃO — DIAGRAMAS DE CONCEITOS (12/10/2026)
+Implementado em assets/diagramas.js, com estilos em assets/curso.css,
+carregamento em aula.html e uma chamada comum em assets/player.js.
+O campo diagrama aparece depois de card.texto em qualquer tipo de cartão.
+Nenhum arquivo de aulas/, dados/ ou tools/ foi alterado nesta atualização.
+
+Os seis tipos:
+- fluxo: passos numerados, setas e destaque também escrito. Vertical no
+  celular; até quatro etapas ficam lado a lado no desktop. Fluxos mais longos
+  mantêm a leitura vertical para não espremer as caixas.
+- arvore: raiz, ligação aos ramos e filhos em listas aninhadas. No celular,
+  ramos empilhados com ligação à esquerda; no desktop, ramos lado a lado.
+  A frase “Juntos, os ramos cobrem a raiz” explicita a cobertura conjunta.
+- piramide: níveis centralizados, do topo estreito à base larga, sem recortar
+  ou transformar o texto para obter a forma.
+- lado_a_lado: duas colunas no desktop, empilhadas no celular. Títulos
+  explicitamente positivos à esquerda recebem ✓; os de cuidado à direita,
+  !. Antes/depois ficam neutros; palavras inteiras evitam confundir “justa”
+  com “injusta”, e negações não ganham marca de certo.
+- cascata: início e fim partem do zero; variações flutuam entre o acumulado
+  anterior e o seguinte. Verde para aumentos, vermelho para reduções, com
+  sinal e rótulo textual. Valores ficam junto de cada coluna. Séries longas
+  ou valores que ficariam apertados usam uma ponte horizontal, uma barra
+  por linha, preservando a mesma escala acumulada e os valores legíveis.
+  Suporta zero, decimais, R$, menos Unicode e acumulados negativos.
+- funil: larguras proporcionais, centradas, com valor e percentual da etapa
+  anterior. Zero permanece zero; denominador zero é indicado como percentual
+  não calculável. Rótulos ficam fora das barras para caberem nas etapas pequenas.
+
+Acessibilidade e apresentação:
+- Figure nativa com aria-label, conteúdo HTML real e nota em figcaption abaixo.
+  Não usa role=img para esconder a estrutura textual das tecnologias assistivas.
+- Usa exclusivamente os tokens existentes nos temas claro e escuro; significado
+  não depende só de cor. Textos quebram dentro das caixas, sem largura mínima
+  fixa que force rolagem da página. Layout móvel é o padrão (desktop: 600px).
+- Texto passa pelo escape e pela formatação permitida da plataforma. Dados
+  numéricos inválidos mostram uma mensagem em vez de desenhar valores falsos.
+- Sem dependências na plataforma, fetch, módulos ou alteração do armazenamento.
+
+Verificação executada:
+- node --check passou em todos os .js de curso/assets/ e curso/aulas/.
+- 80 verificações com Node.js e LinkeDOM temporário passaram: os seis tipos,
+  notas e aria-label, escape de HTML, hierarquia, destaque no índice zero,
+  comparação neutra, dimensões da pirâmide, barras flutuantes, sinais,
+  acumulado cruzando zero, moeda pt-BR, proporções do funil, denominador zero,
+  dados ausentes/inválidos e integração nos seis tipos de cartão.
+- Aula 00 real em DOM simulado: comparação “Período completo”, fluxo do
+  agente, quadrinho, gráfico de barras, tabela recolhida, arquivos do agente,
+  navegação de volta, cinco práticas, erro com revisão, cena e três passos do
+  desafio, resposta comentada, autoavaliação, resumo e conclusão com 65 XP.
+  Conclusão e respostas do desafio persistiram após recriação do DOM.
+- git diff --check passou. Testes e dependência temporária ficaram somente
+  em .tmp/curso-diagramas/. Galeria: .tmp/curso-diagramas/galeria.html,
+  com botão de tema, os seis diagramas e uma ponte com valores monetários.
+
+Limite desta verificação: o controle de interface retornou “Computer Use was
+not approved to use Google Chrome”. Não houve inspeção em navegador real;
+375px sem rolagem lateral, aparência nos dois temas, abertura por file:// e
+leitura por tecnologia assistiva ainda precisam dessa conferência. Os testes
+de DOM e a inspeção do CSS não comprovam esses comportamentos visuais.
+
+ATUALIZAÇÃO — ILUSTRAÇÕES QUE CONTAM A HISTÓRIA
+Implementado em assets/ilustracoes.js, assets/player.js, assets/curso.css e
+aula.html. Nenhuma alteração desta tarefa em aulas/, dados/ ou tools/.
+
+O que foi construído:
+- Elenco autoral em SVG inline: Marta adulta, preocupada, com celular;
+  você, analista com caderno; Agente, bloco flutuante simpático, não humanoide.
+  Todos usam apenas os tokens existentes, com role="img", aria-label e sem
+  imagens externas ou fontes da web. O Agente aparece nas falas das partes B–D.
+- Quadrinho em qualquer tipo de cartão: Marta à esquerda, Você e Agente à
+  direita, nome acima do balão e fala como texto HTML escapado, com as mesmas
+  marcações permitidas no restante da aula. Na abertura fica imediatamente
+  abaixo do título, substituindo a arte genérica de barras.
+- Gráfico de barras horizontais em CSS, extraído da tabela indicada no campo
+  grafico. Conversão pt-BR de milhares, vírgula decimal, R$, sinal − e %.
+  Comprimentos proporcionais, valores nas pontas, destaque na cor de atenção
+  e também com o texto “Em destaque”; nota abaixo. Valores negativos usam um
+  eixo zero comum; zeros e valores ausentes não geram larguras inválidas.
+- Gráfico antes de <details> “Ver a tabela”, inicialmente recolhido. Tabelas
+  sem gráfico continuam visíveis. A tabela do desafio não é duplicada.
+- Avatar de Marta ao lado de “A situação” quando exercicio.cena cita Marta.
+  Passos, começos de frase, validação, salvamento e navegação foram preservados.
+- Layout mobile-first com colunas flexíveis, avatares de 70px nos balões e
+  58px na cena em telas pequenas, sem larguras mínimas que forcem a página.
+  Temas claro/escuro e movimento reduzido seguem as regras já existentes.
+
+Testes executados nesta atualização:
+- node --check em TODOS os .js de assets/ e aulas/: passou.
+- 93 verificações com Node.js 26 e LinkeDOM temporário: passaram. Foram usados
+  os arquivos reais da plataforma e aula 00; DOM, armazenamento e APIs do
+  navegador simulados. A ferramenta temporária foi removida da entrega.
+- Aula 00 completa: abertura, gráfico, tabela, os cinco tipos de prática,
+  desafio em três passos, resposta comentada, autoavaliação, resumo, revisão
+  de uma resposta errada e conclusão com 65 XP. Sem mudança na pontuação.
+- Setas para avançar/voltar, revisão da aula concluída, rascunho restaurado e
+  conclusão persistida após recriação da página.
+- Conversão de “509.823”, “R$ 1.234,56”, espaços, percentuais, zeros, sinal
+  menos Unicode e entradas inválidas; proporções das quatro barras da aula 00.
+- Balões nos seis tipos de cartão, Agente ausente na Parte A e presente nas
+  partes B–D quando declarado; escape de HTML e negrito no texto real.
+- SVGs rotulados, cena com/sem Marta, carregamento antes do player, tabela
+  recolhida, gráfico sem card.tabela e desafio com gráfico sem tabela duplicada.
+
+Limite da verificação: não foi possível inspecionar o layout em navegador real.
+O Chrome headless encerrou com código 134 no ambiente restrito; o controle de
+interface retornou “Computer Use was not approved to use Google Chrome”.
+Ainda é necessário conferir visualmente file://, largura real de 375px, temas,
+ausência de rolagem lateral e leitura por tecnologia assistiva. A inspeção de
+CSS e os testes de DOM não comprovam esses comportamentos de layout.
+
+REGISTRO ANTERIOR DA PLATAFORMA (HISTÓRICO)
+ESTADO DO ACEITE
+Implementação concluída. Passaram 80 verificações em DOM simulado e cálculo
+numérico de contraste, além da checagem de sintaxe dos três arquivos JavaScript.
+A validação visual em navegador real NÃO foi concluída nesta sessão.
+Não afirmo ter percorrido a aula em um navegador via file://, nem medido ausência
+de rolagem lateral em uma viewport real de 375px.
+
+Impedimentos encontrados:
+- O Chrome em modo headless não iniciou no ambiente restrito (saída 134).
+- O controle do Chrome retornou:
+  “Computer Use was not approved to use Google Chrome”.
+- O navegador integrado retornou: “Browser is not available: iab”.
+Foi solicitado acesso ao Chrome durante a tarefa; os testes independentes
+continuaram enquanto esse acesso não estava disponível.
+
+COMO ABRIR
+Dê duplo clique em curso/index.html. Use “Experimentar uma aula” para abrir a
+demonstração. Também é possível abrir curso/aula.html?aula=00 diretamente.
+As 13 aulas do índice estão marcadas como não prontas: aparecem “Em breve”.
+A aula 00 é uma demonstração separada; não foi adicionada à trilha curricular.
+Nenhum dado de aula, índice ou arquivo de curso/tools/ foi alterado.
+
+O QUE FOI CONSTRUÍDO
+- index.html: quatro unidades, 13 nós, estados, desbloqueio sequencial,
+  interruptor para liberar aulas prontas, XP, sequência e meta diária.
+- aula.html: carregamento por script clássico conforme ?aula=NN; um cartão
+  por vez; saída para a trilha; retorno imediato; revisão dos erros ao fim.
+- assets/curso.css: layout mobile-first, largura máxima de 640px, temas por
+  tokens, preferência do sistema, foco visível e movimento reduzido.
+- assets/comum.js: texto escapado, marcações permitidas, glossário, tema e
+  armazenamento protegido por try/catch, com aviso e fallback em memória.
+- assets/trilha.js e assets/player.js: navegação, exercícios e persistência.
+- assets/progresso.html: página local invisível que centraliza o localStorage
+  para navegadores que isolam o armazenamento de cada arquivo file://.
+  Mensagens são limitadas à janela correspondente e às chaves do curso.
+
+A plataforma não usa fetch, módulos ES, servidor, build, fontes externas, CDN
+ou bibliotecas. A ferramenta de DOM usada na verificação foi temporária e
+removida; não faz parte da plataforma. Todos os arquivos entregues são locais.
+
+TESTES EXECUTADOS
+Ambiente: Node.js 26, DOM simulado com LinkeDOM temporário, arquivos reais da
+plataforma e da aula 00. O armazenamento e as APIs do navegador foram simulados.
+Isso verifica lógica e DOM; não substitui um motor de layout ou navegador real.
+
+Percurso da aula 00, do primeiro cartão à conclusão:
+1. Abertura, conceitos, tabela com quatro meses e glossário expansível.
+2. Escolha: resposta vazia bloqueada; opção errada via teclado; “Quase…”;
+   recarga com feedback preservado; exercício enviado à fila de revisão.
+3. Múltipla: seleção de duas opções, salvando uma seleção parcial antes de
+   recriar a página; conjunto correto aceito.
+4. Completar: “ CÓMPLETOS ” aceito, ignorando acentos, caixa e espaços externos.
+5. Ordenar: itens inicialmente fora da ordem correta; seleção, remoção de
+   um item, recarga com dois itens escolhidos e sequência correta completa.
+6. Associar: coluna direita embaralhada; par alterado; recarga com par salvo;
+   três pares corretos aceitos.
+7. Agente: apresentação própria e dois caminhos de arquivo exibidos.
+8. Aberta: texto vazio ou com duas palavras não libera o comentário; frase
+   salva durante digitação e restaurada; resposta comentada revelada apenas
+   após solicitação; autoavaliação obrigatória e preservada na recarga.
+9. Resumo; reapresentação da escolha errada; resposta correta; conclusão.
+10. Resultado: 65 XP, quatro de cinco práticas certas de primeira, tempo e
+    meta diária. Reabrir não duplica XP nem registra o dia duas vezes.
+11. Exportação manual contém o enunciado, a resposta e a autoavaliação.
+    A área de transferência real do sistema não foi testada.
+
+Também verificado:
+- Quatro partes, 13 aulas “Em breve”, interruptor persistente e respeito a
+  pronta:false mesmo com “Liberar todas”.
+- Liberação sequencial com índice de teste em memória; nenhum índice editado.
+- Tema claro/escuro alternado e preservado após recriação da página.
+- Aviso de localStorage indisponível e continuidade da aula sem armazenamento.
+- URL inválida e aula não pronta resultam em mensagem e caminho de saída.
+- Escape de HTML; negrito, itálico, código, lista e termo com definição.
+- Contagem de sequência de um e dois dias.
+- Armazenamento central com páginas simuladas isoladas: tema, desbloqueio,
+  posição e XP chegam à outra página e sobrevivem à recriação.
+- 24 combinações de contraste: texto >= 4,5:1 e bordas dos campos >= 3:1,
+  nos dois temas. Menor contraste textual medido: 4,83:1.
+- node --check passou para comum.js, trilha.js e player.js.
+- Inspeção dos arquivos: só recursos locais; nenhum fetch ou módulo ES;
+  todos os acessos a localStorage dentro de try/catch e com prefixo curso.
+
+PENDENTE EM NAVEGADOR REAL
+- Abrir file:// e percorrer todos os cartões, incluindo uma resposta errada.
+- Recarregar no meio de cada interação e confirmar estado, XP e rascunho.
+- Verificar 375px de largura, sem rolagem lateral da página; conferir também
+  tabelas, associação, caminhos longos, feedback e conclusão.
+- Inspecionar os temas claro/escuro, preferência automática do sistema e
+  persistência do tema ao navegar entre os arquivos.
+- Testar Tab, Espaço, Enter, 1–5, toque, leitor de tela e movimento reduzido.
+- Conferir a cópia para a área de transferência e a alternativa manual.
+
+OBSERVAÇÕES DE USO
+Enter verifica ou continua; 1–5 escolhe opções. Em associação, use o número
+para escolher primeiro uma situação e depois a posição na coluna da direita.
+Espaço também aciona o botão com foco. No campo de resposta aberta, Enter
+permanece uma quebra de linha.
+A ordenação funciona por toque ou teclado; não depende de arrastar.
+Para liberar a resposta comentada de desafios com passos, escreva pelo menos
+três palavras em cada passo; no formato antigo sem passos, quatro palavras.
+Os exercícios errados se repetem até serem acertados: 10 XP de primeira ou
+5 após erro. O desafio rende 20 XP uma única vez.
+Ao reabrir uma aula concluída, você vê o resultado e pode copiar as respostas.
+
+O armazenamento depende das permissões do navegador. Em caso de bloqueio,
+a aula continua na memória; a interface avisa que a retomada pode falhar.
+O comportamento do localStorage em file:// varia entre navegadores:
+https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+
+CORREÇÃO AUTOMÁTICA DOS DESAFIOS
+Abra o curso pelo servidor local, na raiz do projeto:
+    uv run python curso/tools/servidor.py
+e acesse http://localhost:8765. No desafio, o botão vira "Corrigir minhas respostas": um modelo
+barato (Haiku, pelo seu login do Claude CLI) compara cada passo com a resposta comentada e devolve
+certo / em parte / faltou com um comentário. A avaliação final é calculada pelo código e você pode
+ajustá-la. Aberto com duplo clique (file://), o desafio volta à autoavaliação.
+
+PROGRESSO PERMANENTE
+Com o servidor ligado (uv run python curso/tools/servidor.py), o progresso fica salvo num banco
+SQLite em ~/.curso-agente-analista/progresso.sqlite, com histórico das últimas 500 versões. As
+páginas juntam o banco com o que está no navegador (vale o ponto mais avançado de cada aula), tanto
+em http://localhost:8765 quanto abrindo o curso com duplo clique (file://). Sem o servidor, o
+progresso continua só no navegador e sobe para o banco na próxima vez que ele estiver ligado.
