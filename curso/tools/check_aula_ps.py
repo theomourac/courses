@@ -3,13 +3,14 @@
     uv run python curso/tools/check_aula_ps.py curso/people/aulas/aula-03.js [mais arquivos] [--quiet]
 
 Mesmo formato de cartões e mesmas regras de escrita do curso de contabilidade (curso/tools/check_aula_ctb.py),
-com o que muda num curso de conceitos para uma prova de 2 horas de estudo (curso/people/BRIEFING-CODEX.md):
-- aulas curtas: de 4 práticas para cima e de 2 a 8 conceitos;
-- o desafio é uma dissertativa no esqueleto da prova (conceito, evidência, diagnóstico, intervenção). Quando o
+com o que muda num curso de conceitos para cerca de 1 hora de estudo (curso/people/BRIEFING-CODEX.md):
+- aulas curtas: pelo menos 1 prática, de 2 a 8 conceitos e no máximo 1 desafio (as dissertativas que o
+  professor anunciou ficam como respostas-modelo no simulado final, para ler em vez de escrever);
+- o desafio, quando há, é uma dissertativa no esqueleto da prova (conceito, evidência, diagnóstico, intervenção). Quando o
   desafio pede um exemplo do aluno (`pessoal`), a resposta comentada diz o critério ("Vale qualquer…"), porque
   o professor não corrige a história, só se ela faz sentido com o conceito;
 - a aula da folha de consulta (`folha`) tem de 2 a 4 desafios, um por parte da folha;
-- o simulado (`simulado`) é só prática: de 10 práticas para cima e nenhum conceito obrigatório;
+- o simulado (`simulado`) é só prática: de 4 práticas para cima e nenhum conceito obrigatório;
 - elenco Marta, você e Lia; o exercício `numero` (equação da motivação) é conferido como na contabilidade.
 """
 
@@ -28,8 +29,8 @@ TIPOS_CARTAO = {"abertura", "conceito", "pratica", "desafio", "resumo"}
 TIPOS_EXERCICIO = {"escolha", "multipla", "completar", "ordenar", "associar", "numero", "aberta"}
 PERSONAGENS = {"dona", "voce", "mentora"}
 MAX_TEXTO, MAX_CAIXA, MAX_ENUNCIADO, MAX_FALA = 90, 45, 45, 25
-MIN_PRATICAS, MIN_CONCEITOS, MAX_CONCEITOS = 4, 2, 8
-MIN_PRATICAS_SIMULADO = 10
+MIN_PRATICAS, MIN_CONCEITOS, MAX_CONCEITOS = 1, 2, 8
+MIN_PRATICAS_SIMULADO = 4
 # A personal challenge grades the fit with the concept, not the story: the model answer states the criterion.
 CRITERIO_PESSOAL = re.compile(r"\bvale (qualquer|um|uma)\b", re.I)
 
@@ -92,9 +93,9 @@ def checar(path: Path) -> tuple[list[str], list[str]]:
     desafios = tipos.count("desafio")
     if folha and not 2 <= desafios <= 4:
         erros.append(f"{desafios} cartões 'desafio' (a aula da folha tem de 2 a 4: um por parte da folha)")
-    elif not folha and desafios != 1:
-        erros.append(f"{desafios} cartões 'desafio' (deve haver exatamente 1)")
-    minimo = MIN_PRATICAS_SIMULADO if simulado else 2 if folha else MIN_PRATICAS
+    elif not folha and desafios > 1:
+        erros.append(f"{desafios} cartões 'desafio' (no máximo 1 fora da aula da folha)")
+    minimo = MIN_PRATICAS_SIMULADO if simulado else 0 if folha else MIN_PRATICAS
     if tipos.count("pratica") < minimo:
         erros.append(f"{tipos.count('pratica')} cartões 'pratica' (mínimo {minimo}: prova se treina fazendo)")
     if not simulado and not MIN_CONCEITOS <= tipos.count("conceito") <= MAX_CONCEITOS:

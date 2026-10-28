@@ -2,15 +2,15 @@
   "n": "10",
   "parte": "D",
   "titulo": "Simulado final",
-  "objetivo": "Resolver 10 questões de todos os temas no estilo da prova e aplicar a equação da motivação a um projeto seu, no esqueleto que o professor corrige.",
-  "minutos": 14,
+  "objetivo": "Revisar as respostas-modelo das dissertativas que o professor anunciou e resolver 4 questões de todos os temas no estilo da prova.",
+  "minutos": 6,
   "simulado": true,
   "tabelas": {},
   "cartoes": [
     {
       "tipo": "abertura",
       "titulo": "Hoje a prova é sua",
-      "texto": "Este é o ensaio da AV1. São 10 questões de todos os temas, misturadas como na prova, e uma dissertativa que o professor disse que cai com certeza: a equação da motivação aplicada a um projeto seu. Responda sem consultar. Os erros voltam no fim da aula; anote o tema de cada um para saber que aula rever.",
+      "texto": "Este é o ensaio da AV1. Primeiro, as respostas-modelo das dissertativas que o professor anunciou, para você ver o jeito certo de responder. Depois, a revisão de véspera e 4 questões de todos os temas, misturadas como na prova. Responda sem consultar. Os erros voltam no fim da aula; anote o tema de cada um para saber o que rever.",
       "quadrinho": [
         {
           "quem": "dona",
@@ -24,19 +24,15 @@
     },
     {
       "tipo": "conceito",
-      "titulo": "O esqueleto que o professor corrige",
-      "texto": "Na dissertativa, o professor confere três coisas: você entendeu a pergunta, ligou a resposta a um conceito da matéria e o exemplo faz sentido. Ele não corrige a sua história, só o encaixe dela no conceito. Por isso, toda resposta segue quatro passos: nomeie o **conceito**, mostre a **evidência** (comportamento visto, não adjetivo), dê o **diagnóstico** (qual variável, pergunta, perfil ou valor está em jogo) e proponha a **intervenção**: uma ação com prazo e um jeito de medir.",
-      "atencao": "\"Ela é desorganizada\" é adjetivo. \"Ela abriu o Instagram 6 vezes em uma hora\" é evidência: dá para ver, contar e mudar.",
-      "diagrama": {
-        "tipo": "fluxo",
-        "etapas": [
-          "Conceito: o nome da matéria",
-          "Evidência: comportamento, não adjetivo",
-          "Diagnóstico: variável, pergunta, perfil ou valor",
-          "Intervenção: ação, prazo e medida"
-        ],
-        "nota": "Sempre nesta ordem. O desafio do fim da aula segue o mesmo esqueleto."
-      }
+      "titulo": "Dissertativas anunciadas: respostas-modelo (1 de 2)",
+      "texto": "**Equação da motivação, a maratona em 1 ano.** Valor alto, mas certeza baixa e prazo longo travam: M = (9 × 3) ÷ (6 × 9) = 0,5. Micro-metas mensais (5 km → 10 km → meia) sobem a certeza; uma prova marcada a cada 3 meses encurta o prazo; \"se for 6h, calço o tênis\" baixa a impulsividade. **Founder em overthinking.** Escreva tudo no papel, risque o que não depende dele e defina uma ação para o resto. Troque \"por que isso acontece comigo?\" por \"o que faço hoje?\".",
+      "atencao": "Toda dissertativa segue o mesmo esqueleto: conceito, evidência (comportamento, não adjetivo), diagnóstico e intervenção com prazo e um jeito de medir. É exatamente o que o professor corrige."
+    },
+    {
+      "tipo": "conceito",
+      "titulo": "Dissertativas anunciadas: respostas-modelo (2 de 2)",
+      "texto": "**Alguém não se convenceu.** A cliente achou o app útil e lógico, mas teme pelos dados: faltou a 1ª pergunta, posso confiar? (amígdala, ethos). Mostre uma prova de segurança antes de repetir benefícios. **Um princípio de effectuation seu.** Bird-in-hand: \"comecei com quem sou, o que sei e quem conheço\", com um fato seu e a ligação com o autoconhecimento. **Um valor seu.** O valor, o evento que o formou, o que o reforça, o que o compromete, quando aparece e a regra \"quando X, faço Y, mesmo que custe Z\".",
+      "atencao": "Imagem de falhar × errar: quem nem tenta falha; quem tenta, erra, aprende e ajusta. Ligue ao Affordable Loss (erro barato) e ao Lemonade (o erro vira matéria-prima). Play not to lose é o contrário do Pilot in the Plane."
     },
     {
       "tipo": "conceito",
@@ -63,21 +59,6 @@
       "tipo": "pratica",
       "exercicio": {
         "tipo": "escolha",
-        "enunciado": "O perfil Executor tende a se sentir mais confortável em ambientes que: (Simulado, Q3)",
-        "opcoes": [
-          "Oferecem clareza de metas, processos definidos e feedback rápido.",
-          "Valorizam a exploração de ideias sem uma agenda definida.",
-          "Priorizam o relacionamento antes dos resultados.",
-          "Estimulam a reflexão profunda antes de qualquer ação."
-        ],
-        "correta": 0,
-        "explicacao": "O Executor quer avanço e pergunta \"quando fica pronto?\", por isso gosta de meta clara e retorno rápido; \"reflexão profunda antes de agir\" tenta, mas atrai o Estrategista, que busca coerência, e trava o Executor."
-      }
-    },
-    {
-      "tipo": "pratica",
-      "exercicio": {
-        "tipo": "escolha",
         "enunciado": "O perfil de Yvon Chouinard (Patagonia) no círculo de valores de Schwartz é dominado por: (Simulado, Q62)",
         "opcoes": [
           "Poder e realização.",
@@ -87,21 +68,6 @@
         ],
         "correta": 3,
         "explicacao": "Chouinard doou a Patagonia para combater a crise do clima: universalismo e benevolência mandam e o lucro fica abaixo; \"poder e realização\" tenta porque a empresa é grande e lucrativa, mas ele abriu mão de US$ 3 bilhões."
-      }
-    },
-    {
-      "tipo": "pratica",
-      "exercicio": {
-        "tipo": "escolha",
-        "enunciado": "Os três objetivos primários do cérebro, conforme trabalhado em aula, são: (Simulado, Q85)",
-        "opcoes": [
-          "Confiar, interessar-se e entender.",
-          "Ter sucesso e sobreviver; filtrar informações; economizar energia processando tudo por histórias.",
-          "Pensar, sentir e agir.",
-          "Memória, atenção e emoção."
-        ],
-        "correta": 1,
-        "explicacao": "Os objetivos são sobreviver, economizar energia e entender tudo por histórias; \"confiar, interessar-se e entender\" tenta, mas são as três perguntas que nascem desses objetivos, não os objetivos."
       }
     },
     {
@@ -123,21 +89,6 @@
       "tipo": "pratica",
       "exercicio": {
         "tipo": "escolha",
-        "enunciado": "Por que compreender as histórias da rede de modo padrão é relevante para um pitch de produto? (Simulado, Q78)",
-        "opcoes": [
-          "Porque permite manipular o investidor emocionalmente sem que ele perceba.",
-          "Porque pitches baseados em dados ativam a rede padrão com mais eficiência.",
-          "Porque a rede padrão só é ativada em reuniões de negócios formais.",
-          "Porque o cérebro do ouvinte interpreta tudo por narrativas, e seu pitch compete com as histórias que ele já conta para si."
-        ],
-        "correta": 3,
-        "explicacao": "A rede padrão nunca para de contar histórias, então o pitch disputa espaço com elas e precisa encaixar nelas; \"manipular sem que ele perceba\" tenta, mas o curso usa esse conhecimento para adaptar a mensagem, não para manipular."
-      }
-    },
-    {
-      "tipo": "pratica",
-      "exercicio": {
-        "tipo": "escolha",
         "enunciado": "Na folha de um aluno, os três primeiros valores são honestidade (âncora), coragem (motor) e aprendizado (motor). Pela regra das lentes, o que está faltando?",
         "opcoes": [
           "Nada: as funções podem se repetir livremente.",
@@ -147,101 +98,6 @@
         ],
         "correta": 2,
         "explicacao": "Os três primeiros valores devem cobrir âncora (identidade), motor (ação) e bússola (relação); aqui falta a bússola. Repetir função só vale nos valores 4 e 5, como apoio."
-      }
-    },
-    {
-      "tipo": "pratica",
-      "exercicio": {
-        "tipo": "escolha",
-        "enunciado": "As 6 fundações morais de Jonathan Haidt (cuidado, justiça, lealdade, autoridade, pureza e liberdade) explicam por que: (Simulado, Q66)",
-        "opcoes": [
-          "Pessoas de culturas diferentes têm os mesmos valores políticos fundamentais.",
-          "A moralidade é um traço exclusivamente genético e imutável.",
-          "Pessoas de culturas distintas podem ter conflitos morais profundos mesmo com boa intenção, pois operam com fundações diferentes.",
-          "O cérebro decide moralmente pelo Sistema 2, lento e racional, antes do Sistema 1."
-        ],
-        "correta": 2,
-        "explicacao": "Cada pessoa pesa as 6 fundações de um jeito, então duas pessoas de boa-fé podem brigar por moral; \"os mesmos valores políticos\" tenta por soar universal, mas diz o oposto: o conflito nasce justamente das fundações diferentes."
-      }
-    },
-    {
-      "tipo": "pratica",
-      "exercicio": {
-        "tipo": "escolha",
-        "enunciado": "A hierarquia cognitiva (pensamento → emoção → comportamento) conecta-se à retórica de Aristóteles da seguinte forma: (Simulado, Q93)",
-        "opcoes": [
-          "Ethos = comportamento; Pathos = pensamento; Logos = emoção.",
-          "Ethos = autoridade formal; Pathos = simpatia pessoal; Logos = lógica formal.",
-          "Ethos = dados e estatísticas; Pathos = histórias; Logos = exemplos práticos.",
-          "Ethos = pensamento (confiança); Pathos = emoção (interesse); Logos = comportamento (faz sentido)."
-        ],
-        "correta": 3,
-        "explicacao": "A hierarquia casa com as 3 perguntas na mesma ordem: ethos com pensamento e confiança, pathos com emoção e interesse, logos com comportamento e sentido; \"autoridade, simpatia e lógica formal\" soa como Aristóteles, mas não liga à hierarquia."
-      }
-    },
-    {
-      "tipo": "pratica",
-      "exercicio": {
-        "tipo": "escolha",
-        "enunciado": "Segundo Tasha Eurich, menos de qual percentual das pessoas que acreditam ter autoconhecimento (self-awareness) realmente o têm? (Simulado, Q72)",
-        "opcoes": [
-          "5%.",
-          "15%.",
-          "30%.",
-          "50%."
-        ],
-        "correta": 1,
-        "explicacao": "Eurich: 95% acham que se conhecem, mas só cerca de 15% se conhecem de verdade; 5% tenta porque é o que falta para os 95%, mas o dado da pesquisa é o dos 15%."
-      }
-    },
-    {
-      "tipo": "pratica",
-      "exercicio": {
-        "tipo": "escolha",
-        "enunciado": "Qual alternativa sintetiza melhor a conexão entre os três objetivos do cérebro, as três perguntas e a retórica de Aristóteles? (Simulado, Q100)",
-        "opcoes": [
-          "O cérebro sobrevive pela confiança (ethos, amígdala), se motiva pelo interesse (pathos, recompensa) e decide pela coerência (logos, cingulado), numa sequência que não se inverte sem custo.",
-          "O cérebro filtra pelo prazer, pelo medo e pela razão, assim como ethos, pathos e logos.",
-          "Os três objetivos do cérebro só se aplicam a contextos de comunicação formal e profissional.",
-          "Aristóteles criou a teoria das três perguntas baseando-se em neurociência moderna."
-        ],
-        "correta": 0,
-        "explicacao": "A certa liga cada pergunta à sua estrutura e ao seu apelo, na ordem confiança → interesse → sentido; \"prazer, medo e razão\" tenta por ter três itens como Aristóteles, mas troca a ordem e não liga nada à amígdala, à recompensa ou ao cingulado."
-      }
-    },
-    {
-      "tipo": "desafio",
-      "exercicio": {
-        "tipo": "aberta",
-        "pessoal": true,
-        "cena": "Lia avisa: esta cai com certeza, a equação da motivação aplicada a um projeto seu. O professor não corrige a sua história, só se as notas fazem sentido com o conceito. Escolha um projeto real que você vem adiando: um curso, um negócio, um treino. Marta já fez a equação dela e quer comparar com a sua.",
-        "enunciado": "Aplique a equação da motivação a um projeto seu e proponha como destravá-lo.",
-        "passos": [
-          {
-            "pergunta": "Qual é o projeto e que nota de 1 a 10 você dá a valor, certeza, impulsividade e prazo, com uma evidência para cada?",
-            "comeco": "Meu projeto é…"
-          },
-          {
-            "pergunta": "Quanto dá M = (V × C) ÷ (I × P) e qual variável mais trava o projeto?",
-            "comeco": "Com essas notas, M dá…"
-          },
-          {
-            "pergunta": "Que duas intervenções, uma em cima e outra embaixo da fração, você faz, com prazo, e qual é o M esperado depois?",
-            "comeco": "Para destravar, eu vou…"
-          }
-        ],
-        "dica": "Prazo: 1 = esta semana, 10 = próximo semestre. Em cima, nota alta acelera; embaixo, nota alta freia. Micro-objetivo sobe a certeza, marco perto baixa o prazo, ambiente baixa a impulsividade.",
-        "contas": [
-          {
-            "conta": "(8 * 4) / (5 * 9)",
-            "resultado": "0,71"
-          },
-          {
-            "conta": "(8 * 6) / (5 * 3)",
-            "resultado": "3,2"
-          }
-        ],
-        "resposta_comentada": "**Passo 1.** Vale qualquer projeto que você adia, com nota de 1 a 10 e um comportamento como evidência para cada variável. Exemplo, um brechó online: V 8 (quero renda própria), C 4 (nunca vendi), I 5 (abro o Instagram), P 9 (lanço no próximo semestre).\n\n**Passo 2.** Vale qualquer conta de M e a variável mais longe do ideal (baixa em cima, alta embaixo). Exemplo: M = (8 × 4) ÷ (5 × 9) = 0,71. O prazo 9 freia mais: sem marco, a Lei de Parkinson estica o trabalho.\n\n**Passo 3.** Vale qualquer par de ações com prazo e medida, uma em cima e outra embaixo, e o novo M. Exemplo: 5 peças fotografadas por dia (C 6) e a primeira postada nesta sexta (P 3): M = (8 × 6) ÷ (5 × 3) = 3,2."
       }
     },
     {

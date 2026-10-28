@@ -1,4 +1,4 @@
-# Currículo — People Skills para a AV1 (cerca de 2 horas)
+# Currículo — People Skills para a AV1 (cerca de 1 hora)
 
 Fontes: `fontes/resumo-av1.md` (teoria, por módulo) e `fontes/simulado-100.md` (questões e gabarito).
 Formato e regras: `BRIEFING-CODEX.md`. Verificador: `curso/tools/check_aula_ps.py`.
@@ -12,24 +12,24 @@ questões que não estão em nenhuma aula de 01 a 10 vão para a aula 11 (banco 
 
 | Aula | Min | Questões do simulado |
 |---|---|---|
-| 01 Autoconhecimento, Johari e SWOT | 13 | Q41, Q43, Q50, Q54 |
-| 02 Valores e princípios | 19 | Q56, Q58, Q59, Q60, Q61, Q64, Q69 + 2 inéditas das 3 lentes |
-| 03 Monte sua folha de consulta | 26 | Q47 |
-| 04 A equação da motivação | 18 | Q28, Q32, Q33, Q38, Q39 |
-| 05 Emoções e overthinking | 12 | (nenhuma: o módulo 8 não está no simulado) |
-| 06 Os 6 perfis sob pressão | 14 | Q1, Q2, Q4, Q7, Q11 |
-| 07 As 3 perguntas do cérebro | 14 | Q86, Q89, Q90, Q94, Q97, Q99 |
-| 08 Rede padrão e histórias | 14 | Q73, Q74, Q75, Q76, Q79 |
-| 09 Effectuation | 14 | Q13, Q14–Q18 (num só associar), Q19, Q21, Q24, Q27 |
-| 10 Simulado final | 14 | Q3, Q29, Q42, Q62, Q66, Q72, Q78, Q85, Q93, Q100 + 1 inédita das lentes |
-| 11 Banco extra (fora das 2 h) | 35 | todas as outras (47) |
+| 01 Autoconhecimento e Johari | 6 | Q43, Q54 |
+| 02 Valores e princípios | 7 | Q59, Q56, Q64 |
+| 03 Monte sua folha de consulta | 22 |  |
+| 04 A equação da motivação | 5 | Q38 |
+| 05 Emoções e overthinking | 4 |  |
+| 06 Os 6 perfis sob pressão | 4 | Q4 |
+| 07 As 3 perguntas do cérebro | 4 | Q94 |
+| 08 Rede padrão e histórias | 4 | Q74, Q79 |
+| 09 Effectuation | 4 | Q14–Q18 |
+| 10 Simulado final | 6 | Q29, Q62, Q42 |
+| 11 Banco extra de questões | 55 | todas as outras (82) |
 
-As aulas de estudo (01, 02 e 04 a 10) somam cerca de 2h12. A aula 03 monta a folha de consulta (cerca de 25
-minutos de escrita) e a 11 é opcional. Depois da primeira versão, 17 questões saíram das aulas para caber no
-tempo e foram para a aula 11: Q9, Q12, Q20, Q25, Q26, Q30, Q36, Q45, Q46, Q49, Q53, Q57, Q65, Q70, Q80, Q82, Q96.
-As fichas abaixo são as do plano original. As 3 lentes dos valores (fonte `fontes/lentes-dos-valores.md`, a definição dada
-pelo professor) entram na aula 02 (um conceito e 2 práticas), na aula 03 (a tabela completa e o desafio da folha) e na
-aula 10 (a regra de que os 3 primeiros valores cobrem âncora, motor e bússola).
+**Versão de 1 hora (28/10/2026).** As aulas 01 a 10 somam cerca de 66 minutos, dos quais uns 20 são a escrita da
+folha de consulta (aula 03); a 11 é opcional. Cada aula ficou com os conceitos que mais caem e de 1 a 3 práticas; as
+questões cortadas foram para a aula 11. Os desafios escritos ficaram só na aula 03 (a folha): as dissertativas que o
+professor anunciou viraram respostas-modelo para ler no simulado final (aula 10). As lentes são ensinadas uma vez, na
+aula 03. Os resumos de cada aula ainda listam os fatos dos cartões cortados, para revisão rápida. A versão de cerca de
+2 horas é a do primeiro commit do repositório público courses; as fichas abaixo são as do plano original.
 
 ---
 

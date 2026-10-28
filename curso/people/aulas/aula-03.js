@@ -3,7 +3,7 @@
   "parte": "A",
   "titulo": "Monte sua folha de consulta",
   "objetivo": "Escrever a sua SWOT, os quatro cruzamentos e os seus cinco valores com as três lentes, no formato da folha que você leva para a prova.",
-  "minutos": 26,
+  "minutos": 22,
   "folha": true,
   "tabelas": {
     "folha": {
@@ -144,62 +144,6 @@
       "atencao": "O erro mais comum é chamar fator externo de fraqueza. \"O mercado de estágio está difícil\" é ameaça, não fraqueza: não depende de você."
     },
     {
-      "tipo": "pratica",
-      "exercicio": {
-        "tipo": "escolha",
-        "enunciado": "Qual item está escrito do jeito certo para uma SWOT pessoal?",
-        "opcoes": [
-          "Sou comunicativo e criativo.",
-          "O mercado de tecnologia está em crise.",
-          "Apresento ideias com clareza: fui escolhido para apresentar 2 trabalhos em grupo neste semestre.",
-          "Tenho muitas qualidades que ainda não usei."
-        ],
-        "correta": 2,
-        "explicacao": "A certa traz um comportamento e uma evidência que outra pessoa pode conferir. \"Comunicativo e criativo\" são adjetivos, e a crise do mercado é um fator externo, não uma força."
-      }
-    },
-    {
-      "tipo": "pratica",
-      "exercicio": {
-        "tipo": "associar",
-        "enunciado": "Associe cada item ao quadro da SWOT em que ele entra.",
-        "pares": [
-          [
-            "Entrego trabalhos antes do prazo: 3 neste semestre",
-            "Força"
-          ],
-          [
-            "Deixo mensagens sem resposta por dias: 12 pendentes hoje",
-            "Fraqueza"
-          ],
-          [
-            "A faculdade abriu vagas de monitoria",
-            "Oportunidade"
-          ],
-          [
-            "As empresas da minha área cortaram estágios",
-            "Ameaça"
-          ]
-        ],
-        "explicacao": "Forças e fraquezas são comportamentos seus. Oportunidades e ameaças acontecem fora de você: a vaga de monitoria e o corte de estágios não dependem do que você faz."
-      }
-    },
-    {
-      "tipo": "pratica",
-      "exercicio": {
-        "tipo": "escolha",
-        "enunciado": "Ao validar a SWOT pessoal com pessoas próximas, qual cuidado é essencial? (Simulado, Q47)",
-        "opcoes": [
-          "Escolher apenas pessoas que pensam igual a você, para evitar conflito.",
-          "Limitar o feedback a aspectos positivos, para proteger a autoestima.",
-          "Pedir feedback apenas de pessoas do mesmo setor profissional.",
-          "Saber ouvir sem se defender, justificar ou rebater."
-        ],
-        "correta": 3,
-        "explicacao": "Validar é ouvir o que os outros veem em você, inclusive o seu ponto cego. Quem se defende ou só escuta elogios perde exatamente a informação que não tinha."
-      }
-    },
-    {
       "tipo": "desafio",
       "exercicio": {
         "tipo": "aberta",
@@ -236,32 +180,6 @@
       "exemplo": "S+O: \"uso minha clareza ao explicar (força) para me candidatar à monitoria (oportunidade) até o fim do mês; evidência: inscrição enviada\"."
     },
     {
-      "tipo": "pratica",
-      "exercicio": {
-        "tipo": "associar",
-        "enunciado": "Associe cada cruzamento ao resultado que vai na folha.",
-        "pares": [
-          [
-            "S+O (força + oportunidade)",
-            "Alavancagem"
-          ],
-          [
-            "W+O (fraqueza + oportunidade)",
-            "Desenvolvimento"
-          ],
-          [
-            "S+T (força + ameaça)",
-            "Proteção"
-          ],
-          [
-            "W+T (fraqueza + ameaça)",
-            "Cuidado"
-          ]
-        ],
-        "explicacao": "Força com oportunidade alavanca; fraqueza com oportunidade pede desenvolvimento; força contra ameaça protege; fraqueza com ameaça é o ponto de cuidado, o que fazer já."
-      }
-    },
-    {
       "tipo": "desafio",
       "exercicio": {
         "tipo": "aberta",
@@ -292,12 +210,6 @@
     },
     {
       "tipo": "conceito",
-      "titulo": "Como escolher os seus cinco valores",
-      "texto": "Um **valor** é uma palavra que tem prioridade na sua vida e vale em qualquer situação: liberdade, família, respeito, aprendizado. Para achar os seus cinco, pense em momentos que marcaram você: o valor nasce da interpretação que você deu a esses eventos. Um bom teste: quando alguém viola esse valor, o seu corpo reage na hora, antes de você pensar. Ponha os cinco em ordem de prioridade.",
-      "atencao": "Valor é uma palavra só. Explicar como ele vira regra (\"quando X, faço Y\") é princípio, assunto da aula anterior; na folha vão as palavras e as lentes."
-    },
-    {
-      "tipo": "conceito",
       "titulo": "As três lentes",
       "texto": "Depois de escolher os valores, você passa cada um por três lentes e, em cada uma, marca uma palavra. **Lente A**, a função do valor em você: [[âncora|A função de identidade: quem eu sou quando estou no meu melhor.]] (identidade), motor (ação) ou bússola (relação). **Lente B**, a necessidade humana que ele protege (teoria da autodeterminação, de Deci e Ryan): autonomia, competência ou vínculo. **Lente C**, onde ele faz efeito: interno (em você), executivo (na entrega) ou relacional (nas relações). Não há resposta certa: as lentes testam se o valor aguenta uma decisão real.",
       "tabela": "lentes",
@@ -307,37 +219,15 @@
     {
       "tipo": "pratica",
       "exercicio": {
-        "tipo": "associar",
-        "enunciado": "Na lente A, associe cada pergunta à função do valor que ela testa.",
-        "pares": [
-          [
-            "Quem eu sou quando estou no meu melhor?",
-            "Âncora"
-          ],
-          [
-            "O que me move a agir apesar do medo?",
-            "Motor"
-          ],
-          [
-            "Como eu me relaciono, confio e coloco limites?",
-            "Bússola"
-          ]
-        ],
-        "explicacao": "Âncora é identidade (integridade, honestidade), motor é ação (coragem, aprendizado), bússola é relação (respeito, cuidado, justiça). Bússola não é \"me orienta numa escolha\": é como você confia e põe limites."
-      }
-    },
-    {
-      "tipo": "pratica",
-      "exercicio": {
         "tipo": "escolha",
-        "enunciado": "Bia escolheu o valor excelência porque ele define o padrão de qualidade e de responsabilidade das entregas dela. Na lente C, onde esse valor faz efeito?",
+        "enunciado": "Para Bia, o valor respeito responde à pergunta \"como eu me relaciono, confio e coloco limites?\". Na lente A, que função ele cumpre?",
         "opcoes": [
-          "Interno",
-          "Relacional",
-          "Executivo"
+          "Âncora",
+          "Bússola",
+          "Motor"
         ],
-        "correta": 2,
-        "explicacao": "Executivo: o padrão de entrega, qualidade e responsabilidade. Interno seria o limite, a energia ou o custo pessoal (como autocuidado); relacional, a confiança, a comunicação e os acordos (como transparência)."
+        "correta": 1,
+        "explicacao": "Bússola é a função de relação: como você confia e põe limites. Âncora seria identidade (quem sou no meu melhor) e motor, ação (o que me move apesar do medo). Bússola não é \"me orienta numa escolha\"."
       }
     },
     {

@@ -7,7 +7,7 @@
 ## 1. Para quem e para quê
 
 - **Aluno:** Theo, aluno de Administração da Link School of Business, perfil de negócio. Lê em pt-BR.
-- **Objetivo:** ir bem na **AV1 de People Skills** (prof. Bruno Mano), com **cerca de 2 horas de estudo**
+- **Objetivo:** ir bem na **AV1 de People Skills** (prof. Bruno Mano), com **cerca de 1 hora de estudo**
   no total (10 aulas). Cada minuto conta: corte o que não cai.
 - **Como é a prova:** até 10 questões, múltipla escolha e algumas dissertativas, feita para 1h30. Cai
   "exatamente" o que foi feito em aula: quizzes, recapitulações e exercícios. O aluno pode levar **uma
@@ -54,9 +54,10 @@ Um arquivo por aula, `curso/people/aulas/aula-NN.js`, com exatamente esta forma 
 **Cartões** (`tipo`), nesta lógica:
 1. `abertura` (o primeiro), **sempre com `quadrinho`**;
 2. `conceito`: de 2 a 8, curtos;
-3. `pratica`: **4 ou mais** (o currículo diz quais questões), intercaladas com os conceitos e nunca antes
+3. `pratica`: **1 ou mais** (o currículo diz quais questões), intercaladas com os conceitos e nunca antes
    do primeiro. Cada prática testa o conceito que acabou de ser explicado;
-4. `desafio`: exatamente 1, perto do fim (a aula 03 tem de 2 a 4; o simulado marca `"simulado": true`);
+4. `desafio`: no máximo 1, perto do fim (na versão de 1 hora só a aula 03 tem desafios, de 2 a 4; as outras
+   dissertativas viram respostas-modelo no simulado final, que marca `"simulado": true`);
 5. `resumo`: o último.
 
 - **abertura / conceito:** `titulo` e `texto` (≤ 90 palavras). Opcionais: `exemplo` (caixa "Na prática",

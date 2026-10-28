@@ -2,8 +2,8 @@
   "n": "11",
   "parte": "D",
   "titulo": "Banco extra de questões",
-  "objetivo": "Treinar as 47 questões do simulado que não entraram nas outras aulas e interpretar a imagem de falhar × errar, ligando-a à effectuation.",
-  "minutos": 35,
+  "objetivo": "Treinar as 82 questões do simulado que não entraram nas outras aulas e interpretar a imagem de falhar × errar, ligando-a à effectuation.",
+  "minutos": 55,
   "simulado": true,
   "tabelas": {
     "nomes": {
@@ -45,8 +45,8 @@
   "cartoes": [
     {
       "tipo": "abertura",
-      "titulo": "47 questões para treinar se sobrar tempo",
-      "texto": "Este banco fica fora das 2 horas de estudo. São as 47 questões do simulado da turma que não entraram nas outras aulas, misturadas e com explicação curta. Se o tempo apertar, faça em blocos de 10 ou 15. No fim, uma dissertativa sobre a imagem que o professor anunciou para a prova.",
+      "titulo": "82 questões para treinar se sobrar tempo",
+      "texto": "Este banco fica fora da 1 hora de estudo. São as 82 questões do simulado da turma que não entraram nas outras aulas, misturadas e com explicação curta. Se o tempo apertar, faça em blocos de 15 ou 20. No fim, uma dissertativa sobre a imagem que o professor anunciou para a prova.",
       "quadrinho": [
         {
           "quem": "dona",
@@ -774,6 +774,530 @@
         ],
         "correta": 0,
         "explicacao": "Na equação da confiança, a auto-orientação divide tudo: quem só fala de si faz a amígdala do outro ler ameaça, mesmo sendo competente; \"raramente demonstram intimidade\" tenta, mas a intimidade fica em cima da fração e não explica o estrago da divisão."
+      }
+    },
+    {
+      "tipo": "pratica",
+      "exercicio": {
+        "tipo": "escolha",
+        "enunciado": "Por que Eurich sugere perguntar \"o quê\" em vez de \"por quê\" para desenvolver self-awareness? (Simulado, Q50)",
+        "opcoes": [
+          "\"Por quê\" tende a gerar racionalizações; \"o quê\" leva a comportamentos concretos e observáveis.",
+          "Perguntas de \"por quê\" são filosóficas demais e improdutivas.",
+          "Perguntas de \"o quê\" são mais rápidas de responder.",
+          "Perguntas de \"por quê\" só funcionam em terapia formal."
+        ],
+        "correta": 0,
+        "explicacao": "\"Por que eu travei?\" rende uma desculpa que parece lógica; \"o que me impediu?\" rende um dado e uma ação. \"Filosóficas demais\" tenta, mas o problema não é o tom da pergunta: é que ela gera justificativa em vez de dado."
+      }
+    },
+    {
+      "tipo": "pratica",
+      "exercicio": {
+        "tipo": "escolha",
+        "enunciado": "Na Janela de Johari, o quadrante Arena representa: (Simulado, Q41)",
+        "opcoes": [
+          "O que eu sei sobre mim, mas escolho não revelar aos outros.",
+          "O que os outros enxergam em mim e eu não vejo.",
+          "O que nem eu nem os outros conhecemos sobre mim ainda.",
+          "O que eu sei sobre mim e os outros também sabem: zona de confiança e colaboração."
+        ],
+        "correta": 3,
+        "explicacao": "Arena = eu sei e os outros sabem. Escolher esconder é a Fachada; os outros verem e eu não é o Ponto cego; ninguém saber é o Desconhecido."
+      }
+    },
+    {
+      "tipo": "pratica",
+      "exercicio": {
+        "tipo": "escolha",
+        "enunciado": "A hipótese do marcador somático, de Damásio, explica que: (Simulado, Q60)",
+        "opcoes": [
+          "Os valores operam apenas no nível racional e consciente.",
+          "As emoções são irrelevantes para a tomada de decisão estratégica.",
+          "Cada valor tem um sinal corporal; quando ameaçado, o corpo reage antes da mente racional processar.",
+          "Uma área do pré-frontal controla apenas a memória de longo prazo."
+        ],
+        "correta": 2,
+        "explicacao": "O corpo avisa primeiro: é o nó no estômago de Marta. \"Só no nível racional\" e \"emoções irrelevantes\" dizem o contrário de Damásio, para quem o corpo e a emoção entram na decisão."
+      }
+    },
+    {
+      "tipo": "pratica",
+      "exercicio": {
+        "tipo": "escolha",
+        "enunciado": "Um fundador age repetidamente contra seus valores centrais. O que prevê a teoria da dissonância cognitiva, de Festinger? (Simulado, Q61)",
+        "opcoes": [
+          "Uma adaptação natural e sem esforço aos novos valores ao longo do tempo.",
+          "Um desconforto que o leva a mudar o comportamento, racionalizar a ação ou redefinir o valor.",
+          "Mais clareza de valores pela exposição constante ao conflito.",
+          "Uma melhora automática na performance pela tensão criativa gerada."
+        ],
+        "correta": 1,
+        "explicacao": "Agir contra o valor incomoda, e ninguém aguenta o incômodo por muito tempo: muda o que faz, inventa uma justificativa ou rebaixa o valor. \"Adaptação sem esforço\" é justamente o que a dissonância nega."
+      }
+    },
+    {
+      "tipo": "pratica",
+      "exercicio": {
+        "tipo": "escolha",
+        "enunciado": "Qual valor de Schwartz está em tensão direta com autodireção? (Simulado, Q58)",
+        "opcoes": [
+          "Conformidade: autodireção pertence à abertura à mudança, e conformidade, à conservação.",
+          "Estimulação, pois ambos pertencem ao mesmo quadrante.",
+          "Benevolência, pois um é individual e o outro é coletivo.",
+          "Universalismo, pois um é interno e o outro é externo."
+        ],
+        "correta": 0,
+        "explicacao": "Tensão direta = lados opostos do mesmo eixo. Autodireção (decidir por si) briga com conformidade (seguir as regras do grupo). Estimulação é vizinha: as duas se reforçam."
+      }
+    },
+    {
+      "tipo": "pratica",
+      "exercicio": {
+        "tipo": "ordenar",
+        "enunciado": "Ordene a hierarquia cognitiva, do mais profundo para o mais visível. (Simulado, Q69)",
+        "itens": [
+          "Princípios",
+          "Valores",
+          "Crenças",
+          "Emoções e sentimentos",
+          "Comportamentos",
+          "Resultados"
+        ],
+        "explicacao": "Princípios → valores → crenças → emoções e sentimentos → comportamentos → resultados. As opções erradas da questão começam por resultados ou comportamentos: leem a cadeia de fora para dentro."
+      }
+    },
+    {
+      "tipo": "pratica",
+      "exercicio": {
+        "tipo": "escolha",
+        "enunciado": "Ao validar a SWOT pessoal com pessoas próximas, qual cuidado é essencial? (Simulado, Q47)",
+        "opcoes": [
+          "Escolher apenas pessoas que pensam igual a você, para evitar conflito.",
+          "Limitar o feedback a aspectos positivos, para proteger a autoestima.",
+          "Pedir feedback apenas de pessoas do mesmo setor profissional.",
+          "Saber ouvir sem se defender, justificar ou rebater."
+        ],
+        "correta": 3,
+        "explicacao": "Validar é ouvir o que os outros veem em você, inclusive o seu ponto cego. Quem se defende ou só escuta elogios perde exatamente a informação que não tinha."
+      }
+    },
+    {
+      "tipo": "pratica",
+      "exercicio": {
+        "tipo": "escolha",
+        "enunciado": "Na equação M = V × C × I × P, como o simulado escreve, o que representa a variável V (valor)? (Simulado, Q28)",
+        "opcoes": [
+          "O prazo para conclusão de uma tarefa.",
+          "O nível de impulsividade que afeta sua concentração no dia a dia.",
+          "O grau de significado e importância que a atividade tem para você.",
+          "A certeza de que você vai conseguir atingir o resultado esperado."
+        ],
+        "correta": 2,
+        "explicacao": "Valor é quanto a tarefa importa para você. A certeza de conseguir é o C, a outra letra de cima. E lembre: a fórmula divide, M = (V × C) ÷ (I × P); a multiplicação é só como o simulado escreve."
+      }
+    },
+    {
+      "tipo": "pratica",
+      "exercicio": {
+        "tipo": "escolha",
+        "enunciado": "O conceito de micro-objetivos relaciona-se principalmente com qual variável da equação da motivação? (Simulado, Q39)",
+        "opcoes": [
+          "Prazo (P): micro-objetivos criam marcos temporais mais próximos.",
+          "Valor (V): aumentam o significado de cada passo.",
+          "Impulso (I): reduzem a tentação de gratificação imediata.",
+          "Certeza (C): constroem a expectativa de sucesso aos poucos."
+        ],
+        "correta": 3,
+        "explicacao": "Cada pequena vitória aumenta a crença de que você chega lá: isso é certeza. O prazo tenta, mas a alavanca dele é o marco, uma data de entrega próxima. Micro-objetivo fala de conseguir, não de quando."
+      }
+    },
+    {
+      "tipo": "pratica",
+      "exercicio": {
+        "tipo": "escolha",
+        "enunciado": "Um estudante tem 4 meses para entregar um trabalho importante. Segundo a equação da motivação, qual é o risco principal? (Simulado, Q33)",
+        "opcoes": [
+          "O prazo longo aumenta a certeza e melhora o resultado final.",
+          "O prazo longo eleva o componente de procrastinação, reduzindo a motivação no curto prazo.",
+          "O prazo longo aumenta o valor percebido da tarefa.",
+          "O prazo longo elimina automaticamente o componente impulsivo da equação."
+        ],
+        "correta": 1,
+        "explicacao": "O prazo fica embaixo: quanto mais longe a recompensa, menor o M de hoje. Prazo longo não sobe a certeza nem o valor, que estão em cima. A saída é criar marcos próximos."
+      }
+    },
+    {
+      "tipo": "pratica",
+      "exercicio": {
+        "tipo": "escolha",
+        "enunciado": "No modelo WOOP (desejo, resultado, obstáculo, plano), por que visualizar apenas o resultado ideal NÃO é eficaz? (Simulado, Q32)",
+        "opcoes": [
+          "Porque, sem contrastar com os obstáculos reais, o cérebro trata o desejo como já conquistado, reduzindo a motivação para agir.",
+          "Porque o cérebro não processa imagens mentais de sucesso.",
+          "Porque o WOOP foi refutado por pesquisas recentes de neurociência.",
+          "Porque visualizar é uma prática sem base científica comprovada."
+        ],
+        "correta": 0,
+        "explicacao": "Visualizar só o sucesso dá a sensação de já ter chegado, e a energia para agir cai. O WOOP funciona porque põe o obstáculo real ao lado do desejo e deixa pronto o plano. As outras opções inventam que visualizar não tem base."
+      }
+    },
+    {
+      "tipo": "pratica",
+      "exercicio": {
+        "tipo": "escolha",
+        "enunciado": "Qual é o principal objetivo cognitivo do perfil Estrategista? (Simulado, Q1)",
+        "opcoes": [
+          "Executar tarefas com precisão e eficiência operacional.",
+          "Criar conexões relacionais e motivar o time.",
+          "Inovar continuamente sem se prender a processos estabelecidos.",
+          "Dar sentido ao ambiente e construir visões de longo prazo (sense making)."
+        ],
+        "correta": 3,
+        "explicacao": "O Estrategista quer coerência: junta informações soltas numa história que orienta a decisão e olha o longo prazo. Executar com precisão é o distrator mais tentador, mas esse é o objetivo do Executor, que quer avanço."
+      }
+    },
+    {
+      "tipo": "pratica",
+      "exercicio": {
+        "tipo": "escolha",
+        "enunciado": "Sua landing page tem como público principal pessoas que operam como Executores. Qual chamada para ação é mais eficaz? (Simulado, Q2)",
+        "opcoes": [
+          "\"Descubra as infinitas possibilidades que esse produto abre para você.\"",
+          "\"Compre agora: entrega em 24h com devolução garantida em 7 dias.\"",
+          "\"Pense diferente. Transforme sua realidade.\"",
+          "\"Junte-se a uma comunidade de pessoas que compartilham seus valores.\""
+        ],
+        "correta": 1,
+        "explicacao": "O Executor quer avanço: ação clara, prazo curto e risco baixo. \"Infinitas possibilidades\" é vago demais para quem pergunta \"quando fica pronto?\", e \"pense diferente\" fala com quem busca novidade."
+      }
+    },
+    {
+      "tipo": "pratica",
+      "exercicio": {
+        "tipo": "escolha",
+        "enunciado": "Num time com perfis diferentes, tensões surgem com mais frequência entre Executores e Inovadores porque: (Simulado, Q7)",
+        "opcoes": [
+          "Ambos competem pela liderança formal do projeto.",
+          "Os dois têm dificuldade de comunicação interpessoal.",
+          "Ambos dependem dos mesmos recursos financeiros para operar.",
+          "Um prioriza processo e previsibilidade; o outro, ruptura e novidade."
+        ],
+        "correta": 3,
+        "explicacao": "São dois caminhos opostos para recuperar o controle: o Executor busca previsibilidade; o Inovador, novidade. Disputar a liderança é o distrator mais tentador, mas trata o conflito como ego, e a matéria diz que não é."
+      }
+    },
+    {
+      "tipo": "pratica",
+      "exercicio": {
+        "tipo": "escolha",
+        "enunciado": "Para adaptar um pitch ao perfil de cada investidor, qual é a primeira informação que você deveria mapear? (Simulado, Q11)",
+        "opcoes": [
+          "Quanto tempo ele tem disponível para a reunião.",
+          "Em quantas empresas ele já investiu.",
+          "Qual é o estilo de processamento e tomada de decisão preferido por ele.",
+          "Qual é o setor de preferência dele."
+        ],
+        "correta": 2,
+        "explicacao": "Adaptar o pitch é ajustar linguagem, ritmo e estrutura ao jeito como ele decide; por isso isso vem primeiro. O tempo de agenda é o distrator mais tentador: define o tamanho da fala, não como convencer."
+      }
+    },
+    {
+      "tipo": "pratica",
+      "exercicio": {
+        "tipo": "ordenar",
+        "enunciado": "Ponha na ordem as três perguntas que o cérebro faz ao avaliar qualquer pessoa, produto ou ideia. (Simulado, Q86)",
+        "itens": [
+          "Por que posso confiar?",
+          "Por que isso me interessa?",
+          "Isso faz sentido?"
+        ],
+        "explicacao": "Primeiro a confiança, depois o interesse, por fim o sentido. Sem confiança, o cérebro nem chega a avaliar o resto. No simulado, os distratores trocam as perguntas por outras listas, como \"O que sinto? O que penso? O que vou fazer?\"."
+      }
+    },
+    {
+      "tipo": "pratica",
+      "exercicio": {
+        "tipo": "escolha",
+        "enunciado": "Qual é a Equação da Confiança trabalhada em aula? (Simulado, Q89)",
+        "opcoes": [
+          "Credibilidade + Competência + Simpatia ÷ Frequência.",
+          "Confiabilidade + Autenticidade − Vaidade.",
+          "Experiência + Resultado ÷ Expectativa.",
+          "(Credibilidade + Recorrência + Intimidade) ÷ Auto-orientação."
+        ],
+        "correta": 3,
+        "explicacao": "Três termos somados em cima (credibilidade, recorrência, intimidade), divididos pela auto-orientação. O distrator mais tentador troca recorrência e intimidade por competência e simpatia: soa parecido, mas não é a equação da aula."
+      }
+    },
+    {
+      "tipo": "pratica",
+      "exercicio": {
+        "tipo": "escolha",
+        "enunciado": "O elemento mais perigoso na Equação da Confiança é a auto-orientação porque: (Simulado, Q90)",
+        "opcoes": [
+          "Ela reduz a credibilidade ao aumentar demais a especialização percebida.",
+          "Ela é o único elemento da equação que não pode ser desenvolvido.",
+          "Ela divide toda a equação: quanto mais você age em função de si, menor a confiança que gera nos outros.",
+          "Ela aumenta artificialmente a recorrência de interações, gerando dependência."
+        ],
+        "correta": 2,
+        "explicacao": "Ela está embaixo da divisão: corta a soma inteira, por maior que seja a credibilidade. \"Reduz a credibilidade\" é o distrator mais tentador, mas a auto-orientação não mexe num termo só; derruba todos de uma vez."
+      }
+    },
+    {
+      "tipo": "pratica",
+      "exercicio": {
+        "tipo": "escolha",
+        "enunciado": "Um palestrante abre a fala com uma história pessoal de fracasso e aprendizado, antes de qualquer slide técnico. Que elemento da tríade de Aristóteles ele constrói? (Simulado, Q97)",
+        "opcoes": [
+          "Logos: fundamenta o argumento em evidência empírica.",
+          "Apenas pathos: a emoção sem a dimensão de confiança.",
+          "Pathos e ethos ao mesmo tempo: identificação emocional e credibilidade humana.",
+          "Logos e ethos: dados e autoridade formal."
+        ],
+        "correta": 2,
+        "explicacao": "A história emociona (pathos) e mostra alguém real, que errou e aprendeu, o que gera credibilidade (ethos). \"Apenas pathos\" é o distrator mais tentador: esquece que se expor com honestidade também constrói confiança."
+      }
+    },
+    {
+      "tipo": "pratica",
+      "exercicio": {
+        "tipo": "escolha",
+        "enunciado": "Num pitch para investidores, qual é a sequência correta de argumento segundo as três perguntas do cérebro? (Simulado, Q99)",
+        "opcoes": [
+          "Dados financeiros → modelo de negócio → visão de futuro.",
+          "Credibilidade do time (ethos) → dor ou desejo do mercado (pathos) → modelo com dados coerentes (logos).",
+          "Problema e solução → time e credibilidade → projeções financeiras.",
+          "Começar pelo produto → mostrar tração → apresentar o time."
+        ],
+        "correta": 1,
+        "explicacao": "Confiança, depois interesse, depois sentido: o time primeiro, a dor em seguida, os números por último. \"Problema e solução → time\" é o distrator mais tentador: deixa a confiança para depois e inverte a ordem."
+      }
+    },
+    {
+      "tipo": "pratica",
+      "exercicio": {
+        "tipo": "escolha",
+        "enunciado": "A rede de modo padrão se ativa principalmente quando: (Simulado, Q73)",
+        "opcoes": [
+          "A pessoa executa tarefas que exigem atenção plena e concentração máxima.",
+          "Há estímulos externos intensos, como música ou movimento no ambiente.",
+          "A mente está em repouso ou à deriva, sem tarefa focada, gerando pensamentos automáticos e narrativas internas.",
+          "O córtex pré-frontal assume o controle total das decisões racionais."
+        ],
+        "correta": 2,
+        "explicacao": "A rede padrão liga quando a mente está solta, sem tarefa, e produz pensamentos e histórias automáticos. Atenção plena e controle racional são o terreno da rede executiva: quando ela funciona, a rede padrão desliga."
+      }
+    },
+    {
+      "tipo": "pratica",
+      "exercicio": {
+        "tipo": "escolha",
+        "enunciado": "No contexto de negócios, a história “sobre mim” se conecta à estratégia da Nike porque: (Simulado, Q75)",
+        "opcoes": [
+          "A Nike faz propagandas centradas em produtos, preços e especificações técnicas.",
+          "A Nike usa dados neurológicos do consumidor para criar dependência de compra.",
+          "A Nike segmenta o público exclusivamente pelo comportamento de compra online.",
+          "A Nike não vende tênis: vende uma identidade (“você é um atleta”) que ressoa com a história que o consumidor conta sobre si."
+        ],
+        "correta": 3,
+        "explicacao": "A Nike fala com quem o cliente acredita ser, não com a ficha técnica do tênis. Propaganda de produto e preço é justamente o que a história “sobre mim” supera: o cliente compra a identidade, e o tênis vem junto."
+      }
+    },
+    {
+      "tipo": "pratica",
+      "exercicio": {
+        "tipo": "escolha",
+        "enunciado": "A segunda história da rede padrão (“passado e futuro”) conecta-se ao empreendedorismo pela pergunta: (Simulado, Q76)",
+        "opcoes": [
+          "“Quem sou eu no mercado e como sou percebido?”",
+          "“Por que isso me interessa?”, que também é a segunda pergunta que o cérebro faz diante de qualquer oferta.",
+          "“Como os outros me percebem como empreendedor?”",
+          "“Qual é o valor financeiro do meu produto no mercado?”"
+        ],
+        "correta": 1,
+        "explicacao": "Segunda história, segunda pergunta: passado e futuro conversa com o interesse. “Como sou percebido” é a terceira história (como os outros me veem), que conversa com o “faz sentido”, não com o interesse."
+      }
+    },
+    {
+      "tipo": "pratica",
+      "exercicio": {
+        "tipo": "escolha",
+        "enunciado": "A effectuation difere do raciocínio causal (causation) principalmente porque: (Simulado, Q19)",
+        "opcoes": [
+          "A effectuation é usada apenas em startups; a causation, em grandes empresas.",
+          "O raciocínio causal é mais criativo; a effectuation é mais analítica.",
+          "A causation parte de objetivos fixos e busca recursos; a effectuation parte dos recursos disponíveis e deixa os objetivos surgirem.",
+          "A effectuation exige mais capital inicial do que a causation."
+        ],
+        "correta": 2,
+        "explicacao": "Cardápio × geladeira: a diferença é o ponto de partida, objetivo ou meios, e não o tamanho da empresa. E a effectuation pede menos capital, não mais: começa com o que você já tem."
+      }
+    },
+    {
+      "tipo": "pratica",
+      "exercicio": {
+        "tipo": "escolha",
+        "enunciado": "Qual dos seguintes NÃO é um mito sobre empreendedorismo contestado pela effectuation? (Simulado, Q13)",
+        "opcoes": [
+          "Empreendedores nascem com um DNA especial para o sucesso.",
+          "Empreendedores precisam de formação acadêmica em gestão para ter sucesso.",
+          "Empreendedores são, por natureza, grandes tomadores de risco.",
+          "O sucesso empreendedor depende exclusivamente de condições externas favoráveis."
+        ],
+        "correta": 1,
+        "explicacao": "Leia o NÃO. A effectuation derruba três mitos: DNA, grande tomador de risco e sorte (condições externas). Formação acadêmica não está entre eles, por isso é a resposta. As outras três opções são exatamente os mitos que ela contesta."
+      }
+    },
+    {
+      "tipo": "pratica",
+      "exercicio": {
+        "tipo": "escolha",
+        "enunciado": "No contexto da effectuation, o princípio Affordable Loss orienta o empreendedor a: (Simulado, Q21)",
+        "opcoes": [
+          "Calcular o retorno sobre o investimento antes de qualquer decisão.",
+          "Buscar o maior financiamento possível para minimizar riscos futuros.",
+          "Evitar qualquer ação que envolva risco financeiro, por menor que seja.",
+          "Definir antes quanto está disposto a perder, e não quanto espera ganhar."
+        ],
+        "correta": 3,
+        "explicacao": "Affordable Loss troca “quanto vou ganhar?” por “quanto aceito perder?”. “Evitar qualquer risco” é o distrator mais tentador, mas Pedro arriscou: pouco e dentro do que podia perder. Calcular o retorno antes é a lógica da causation."
+      }
+    },
+    {
+      "tipo": "pratica",
+      "exercicio": {
+        "tipo": "escolha",
+        "enunciado": "Qual dos mitos da effectuation é especialmente paralisante para um empreendedor iniciante? (Simulado, Q27)",
+        "opcoes": [
+          "O mito da sorte, pois faz esperar o momento perfeito que nunca chega.",
+          "O mito das condições externas, pois paralisa a ação enquanto se aguarda o ambiente ideal.",
+          "O mito do DNA, pois leva a desistir antes de tentar, acreditando não ter nascido para isso.",
+          "Todos os anteriores são igualmente paralisantes, a depender do contexto."
+        ],
+        "correta": 2,
+        "explicacao": "O mito do DNA faz desistir antes de tentar: é falhar, no sentido da aula. “Todos os anteriores” tenta pelo bom senso, mas o simulado marca o DNA, porque ele corta a tentativa na raiz."
+      }
+    },
+    {
+      "tipo": "pratica",
+      "exercicio": {
+        "tipo": "escolha",
+        "enunciado": "Qual competência de People Skills está mais relacionada ao princípio Lemonade? (Simulado, Q24)",
+        "opcoes": [
+          "Social awareness: perceber oportunidades nas mudanças e imprevistos do ambiente.",
+          "Self-awareness: conhecimento dos seus recursos e talentos.",
+          "Self-management: autorregulação e controle da impulsividade.",
+          "Relationship management: construir alianças com stakeholders estratégicos."
+        ],
+        "correta": 0,
+        "explicacao": "Lemonade transforma o imprevisto do ambiente em oportunidade: é perceber o que muda lá fora. Self-awareness tenta porque fala de recursos, mas isso é Bird-in-hand. O guia liga Lemonade a outra competência; na prova, marque a opção que aparecer."
+      }
+    },
+    {
+      "tipo": "pratica",
+      "exercicio": {
+        "tipo": "escolha",
+        "enunciado": "O perfil Executor tende a se sentir mais confortável em ambientes que: (Simulado, Q3)",
+        "opcoes": [
+          "Oferecem clareza de metas, processos definidos e feedback rápido.",
+          "Valorizam a exploração de ideias sem uma agenda definida.",
+          "Priorizam o relacionamento antes dos resultados.",
+          "Estimulam a reflexão profunda antes de qualquer ação."
+        ],
+        "correta": 0,
+        "explicacao": "O Executor quer avanço e pergunta \"quando fica pronto?\", por isso gosta de meta clara e retorno rápido; \"reflexão profunda antes de agir\" tenta, mas atrai o Estrategista, que busca coerência, e trava o Executor."
+      }
+    },
+    {
+      "tipo": "pratica",
+      "exercicio": {
+        "tipo": "escolha",
+        "enunciado": "Por que compreender as histórias da rede de modo padrão é relevante para um pitch de produto? (Simulado, Q78)",
+        "opcoes": [
+          "Porque permite manipular o investidor emocionalmente sem que ele perceba.",
+          "Porque pitches baseados em dados ativam a rede padrão com mais eficiência.",
+          "Porque a rede padrão só é ativada em reuniões de negócios formais.",
+          "Porque o cérebro do ouvinte interpreta tudo por narrativas, e seu pitch compete com as histórias que ele já conta para si."
+        ],
+        "correta": 3,
+        "explicacao": "A rede padrão nunca para de contar histórias, então o pitch disputa espaço com elas e precisa encaixar nelas; \"manipular sem que ele perceba\" tenta, mas o curso usa esse conhecimento para adaptar a mensagem, não para manipular."
+      }
+    },
+    {
+      "tipo": "pratica",
+      "exercicio": {
+        "tipo": "escolha",
+        "enunciado": "As 6 fundações morais de Jonathan Haidt (cuidado, justiça, lealdade, autoridade, pureza e liberdade) explicam por que: (Simulado, Q66)",
+        "opcoes": [
+          "Pessoas de culturas diferentes têm os mesmos valores políticos fundamentais.",
+          "A moralidade é um traço exclusivamente genético e imutável.",
+          "Pessoas de culturas distintas podem ter conflitos morais profundos mesmo com boa intenção, pois operam com fundações diferentes.",
+          "O cérebro decide moralmente pelo Sistema 2, lento e racional, antes do Sistema 1."
+        ],
+        "correta": 2,
+        "explicacao": "Cada pessoa pesa as 6 fundações de um jeito, então duas pessoas de boa-fé podem brigar por moral; \"os mesmos valores políticos\" tenta por soar universal, mas diz o oposto: o conflito nasce justamente das fundações diferentes."
+      }
+    },
+    {
+      "tipo": "pratica",
+      "exercicio": {
+        "tipo": "escolha",
+        "enunciado": "A hierarquia cognitiva (pensamento → emoção → comportamento) conecta-se à retórica de Aristóteles da seguinte forma: (Simulado, Q93)",
+        "opcoes": [
+          "Ethos = comportamento; Pathos = pensamento; Logos = emoção.",
+          "Ethos = autoridade formal; Pathos = simpatia pessoal; Logos = lógica formal.",
+          "Ethos = dados e estatísticas; Pathos = histórias; Logos = exemplos práticos.",
+          "Ethos = pensamento (confiança); Pathos = emoção (interesse); Logos = comportamento (faz sentido)."
+        ],
+        "correta": 3,
+        "explicacao": "A hierarquia casa com as 3 perguntas na mesma ordem: ethos com pensamento e confiança, pathos com emoção e interesse, logos com comportamento e sentido; \"autoridade, simpatia e lógica formal\" soa como Aristóteles, mas não liga à hierarquia."
+      }
+    },
+    {
+      "tipo": "pratica",
+      "exercicio": {
+        "tipo": "escolha",
+        "enunciado": "Segundo Tasha Eurich, menos de qual percentual das pessoas que acreditam ter autoconhecimento (self-awareness) realmente o têm? (Simulado, Q72)",
+        "opcoes": [
+          "5%.",
+          "15%.",
+          "30%.",
+          "50%."
+        ],
+        "correta": 1,
+        "explicacao": "Eurich: 95% acham que se conhecem, mas só cerca de 15% se conhecem de verdade; 5% tenta porque é o que falta para os 95%, mas o dado da pesquisa é o dos 15%."
+      }
+    },
+    {
+      "tipo": "pratica",
+      "exercicio": {
+        "tipo": "escolha",
+        "enunciado": "Os três objetivos primários do cérebro, conforme trabalhado em aula, são: (Simulado, Q85)",
+        "opcoes": [
+          "Confiar, interessar-se e entender.",
+          "Ter sucesso e sobreviver; filtrar informações; economizar energia processando tudo por histórias.",
+          "Pensar, sentir e agir.",
+          "Memória, atenção e emoção."
+        ],
+        "correta": 1,
+        "explicacao": "Os objetivos são sobreviver, economizar energia e entender tudo por histórias; \"confiar, interessar-se e entender\" tenta, mas são as três perguntas que nascem desses objetivos, não os objetivos."
+      }
+    },
+    {
+      "tipo": "pratica",
+      "exercicio": {
+        "tipo": "escolha",
+        "enunciado": "Qual alternativa sintetiza melhor a conexão entre os três objetivos do cérebro, as três perguntas e a retórica de Aristóteles? (Simulado, Q100)",
+        "opcoes": [
+          "O cérebro sobrevive pela confiança (ethos, amígdala), se motiva pelo interesse (pathos, recompensa) e decide pela coerência (logos, cingulado), numa sequência que não se inverte sem custo.",
+          "O cérebro filtra pelo prazer, pelo medo e pela razão, assim como ethos, pathos e logos.",
+          "Os três objetivos do cérebro só se aplicam a contextos de comunicação formal e profissional.",
+          "Aristóteles criou a teoria das três perguntas baseando-se em neurociência moderna."
+        ],
+        "correta": 0,
+        "explicacao": "A certa liga cada pergunta à sua estrutura e ao seu apelo, na ordem confiança → interesse → sentido; \"prazer, medo e razão\" tenta por ter três itens como Aristóteles, mas troca a ordem e não liga nada à amígdala, à recompensa ou ao cingulado."
       }
     },
     {

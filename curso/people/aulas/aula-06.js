@@ -3,7 +3,7 @@
   "parte": "C",
   "titulo": "Os 6 perfis sob pressão",
   "objetivo": "Reconhecer em que perfil alguém está operando, pela pergunta que faz, e adaptar a conversa sem rotular nem manipular.",
-  "minutos": 14,
+  "minutos": 4,
   "tabelas": {
     "perfis": {
       "fonte": "nenhum",
@@ -121,27 +121,6 @@
       "tipo": "pratica",
       "exercicio": {
         "tipo": "escolha",
-        "enunciado": "Qual é o principal objetivo cognitivo do perfil Estrategista? (Simulado, Q1)",
-        "opcoes": [
-          "Executar tarefas com precisão e eficiência operacional.",
-          "Criar conexões relacionais e motivar o time.",
-          "Inovar continuamente sem se prender a processos estabelecidos.",
-          "Dar sentido ao ambiente e construir visões de longo prazo (sense making)."
-        ],
-        "correta": 3,
-        "explicacao": "O Estrategista quer coerência: junta informações soltas numa história que orienta a decisão e olha o longo prazo. Executar com precisão é o distrator mais tentador, mas esse é o objetivo do Executor, que quer avanço."
-      }
-    },
-    {
-      "tipo": "conceito",
-      "titulo": "Executor compra avanço; Estrategista compra coerência",
-      "texto": "Gil, o estoquista, recebe uma mensagem longa sobre \"o momento do varejo\" e responde: \"Tá, e o que eu faço amanhã?\". Quem opera como Executor gosta de meta clara, processo definido e retorno rápido; texto vago e sem urgência incomoda. Para ele, mostre o resultado e o próximo passo. Quem opera como Estrategista quer o contrário primeiro: o panorama, a ligação com o mercado e o longo prazo. Para ele, mostre a lógica antes dos detalhes.",
-      "atencao": "Passo a passo da execução e entregas da primeira semana são para o Executor. Para o Estrategista, comece pelo panorama e pelo longo prazo. É a troca que a prova mais testa."
-    },
-    {
-      "tipo": "pratica",
-      "exercicio": {
-        "tipo": "escolha",
         "enunciado": "Você vai apresentar um projeto a um líder com perfil Estrategista. Qual abordagem é mais adequada? (Simulado, Q4)",
         "opcoes": [
           "Focar em dados operacionais e no passo a passo da execução.",
@@ -151,93 +130,6 @@
         ],
         "correta": 2,
         "explicacao": "O Estrategista compra coerência: primeiro o panorama e o longo prazo, depois os detalhes. O passo a passo da execução é o distrator mais tentador, mas é o que o Executor quer ver."
-      }
-    },
-    {
-      "tipo": "pratica",
-      "exercicio": {
-        "tipo": "escolha",
-        "enunciado": "Sua landing page tem como público principal pessoas que operam como Executores. Qual chamada para ação é mais eficaz? (Simulado, Q2)",
-        "opcoes": [
-          "\"Descubra as infinitas possibilidades que esse produto abre para você.\"",
-          "\"Compre agora: entrega em 24h com devolução garantida em 7 dias.\"",
-          "\"Pense diferente. Transforme sua realidade.\"",
-          "\"Junte-se a uma comunidade de pessoas que compartilham seus valores.\""
-        ],
-        "correta": 1,
-        "explicacao": "O Executor quer avanço: ação clara, prazo curto e risco baixo. \"Infinitas possibilidades\" é vago demais para quem pergunta \"quando fica pronto?\", e \"pense diferente\" fala com quem busca novidade."
-      }
-    },
-    {
-      "tipo": "conceito",
-      "titulo": "Conflito não é ego",
-      "texto": "Gil quer testar logo uma vitrine nova; Bia quer manter a que já vende bem. Parece briga de vaidade, mas não é. Na matéria, conflito são duas pessoas tentando recuperar o controle por caminhos opostos. Cada uma lê o caminho da outra como ameaça ao próprio controle. O simulado traz um par clássico: o Executor prioriza processo e previsibilidade; o Inovador prioriza ruptura e novidade.",
-      "atencao": "Nomes antigos do simulado: o **Relacionador** constrói e mantém vínculos de confiança dentro e fora do time; o **Inovador** se atrai por \"uma forma nova de resolver um problema antigo\".",
-      "quadrinho": [
-        {
-          "quem": "mentora",
-          "fala": "O simulado usa dois nomes antigos, Inovador e Relacionador. Na prova, marque o nome que aparecer."
-        }
-      ]
-    },
-    {
-      "tipo": "pratica",
-      "exercicio": {
-        "tipo": "escolha",
-        "enunciado": "Num time com perfis diferentes, tensões surgem com mais frequência entre Executores e Inovadores porque: (Simulado, Q7)",
-        "opcoes": [
-          "Ambos competem pela liderança formal do projeto.",
-          "Os dois têm dificuldade de comunicação interpessoal.",
-          "Ambos dependem dos mesmos recursos financeiros para operar.",
-          "Um prioriza processo e previsibilidade; o outro, ruptura e novidade."
-        ],
-        "correta": 3,
-        "explicacao": "São dois caminhos opostos para recuperar o controle: o Executor busca previsibilidade; o Inovador, novidade. Disputar a liderança é o distrator mais tentador, mas trata o conflito como ego, e a matéria diz que não é."
-      }
-    },
-    {
-      "tipo": "conceito",
-      "titulo": "Ler sem rotular",
-      "texto": "Bia pediu prazo uma vez: um sinal sozinho não vale nada. Pediu prazo e cronograma por escrito: dois sinais iguais viram hipótese, e só hipótese. Cuidado com quatro riscos: rotular, cair no [[viés de confirmação|enxergar só o que confirma o rótulo que você já deu]], ignorar a cultura e o poder de cada um, e usar o perfil como desculpa (\"eu sou assim\"). Quando você mesmo travar, faça o oposto do seu piloto automático.",
-      "exemplo": "Conhecer o perfil serve para adaptar linguagem, ritmo e estrutura à forma como a pessoa processa e decide. Não serve para manipular nem para dominar a conversa."
-    },
-    {
-      "tipo": "pratica",
-      "exercicio": {
-        "tipo": "escolha",
-        "enunciado": "Para adaptar um pitch ao perfil de cada investidor, qual é a primeira informação que você deveria mapear? (Simulado, Q11)",
-        "opcoes": [
-          "Quanto tempo ele tem disponível para a reunião.",
-          "Em quantas empresas ele já investiu.",
-          "Qual é o estilo de processamento e tomada de decisão preferido por ele.",
-          "Qual é o setor de preferência dele."
-        ],
-        "correta": 2,
-        "explicacao": "Adaptar o pitch é ajustar linguagem, ritmo e estrutura ao jeito como ele decide; por isso isso vem primeiro. O tempo de agenda é o distrator mais tentador: define o tamanho da fala, não como convencer."
-      }
-    },
-    {
-      "tipo": "desafio",
-      "exercicio": {
-        "tipo": "aberta",
-        "cena": "Marta apresenta o plano da segunda loja ao time na sexta. Nas últimas reuniões, Caio, o sócio, perguntou \"quando fica pronto?\" e pediu um cronograma com datas. Duda, a gerente, perguntou \"por que isso agora?\" e pediu dados do bairro e dos concorrentes. Os dois saem irritados, e Marta acha que é ego. Ela quer uma reunião que funcione para os dois.",
-        "enunciado": "Ajude Marta a ler Caio e Duda e a montar a reunião de sexta.",
-        "passos": [
-          {
-            "pergunta": "Em que perfil cada um está operando? Dê os dois sinais que mostram isso.",
-            "comeco": "Caio está operando como…"
-          },
-          {
-            "pergunta": "Se não é ego, por que os dois brigam?",
-            "comeco": "Os dois estão tentando recuperar o controle…"
-          },
-          {
-            "pergunta": "Como Marta apresenta o plano aos dois na mesma reunião, e como vai saber se funcionou?",
-            "comeco": "Na sexta, Marta abre com…"
-          }
-        ],
-        "dica": "Ouça a pergunta que cada um faz: ela entrega o perfil. Conflito é dois caminhos opostos para recuperar o controle.",
-        "resposta_comentada": "**Passo 1.** Caio está operando como Executor: pergunta \"quando fica pronto?\" e pede cronograma com datas, dois sinais de quem quer avanço. Duda está operando como Estrategista: pergunta \"por que isso agora?\" e pede dados do bairro, sinais de quem quer coerência.\n\n**Passo 2.** Não é ego: são dois caminhos opostos para recuperar o controle. Caio se acalma avançando; Duda, entendendo o panorama. A pressa de um parece ameaça ao outro, e a análise da outra parece atraso.\n\n**Passo 3.** Marta abre com o panorama e os dados do bairro, que respondem a Duda, e fecha com o cronograma e o próximo passo com dono e data, para Caio. Funcionou se a reunião de sexta termina com essa data aprovada pelos dois, sem briga."
       }
     },
     {

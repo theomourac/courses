@@ -7,7 +7,7 @@ Link School of Business (Administração, 2026).
 | Curso | Endereço | O que cobre |
 |---|---|---|
 | Contabilidade Gerencial em 1 dia | `index.html?curso=contabilidade` | matemática financeira, balanço, DRE, DFC, análise vertical e horizontal, rentabilidade, liquidez, tributos e simulado |
-| People Skills para a AV1 | `index.html?curso=people` | autoconhecimento e SWOT, valores e as 3 lentes, folha de consulta, equação da motivação, emoções, perfis, as 3 perguntas do cérebro, rede padrão, effectuation e simulado |
+| People Skills para a AV1 (cerca de 1 hora) | `index.html?curso=people` | autoconhecimento, valores, a sua folha de consulta (SWOT, cruzamentos e as 3 lentes), equação da motivação, emoções, perfis, as 3 perguntas do cérebro, rede padrão, effectuation, respostas-modelo das dissertativas e um banco extra de 82 questões |
 
 ---
 

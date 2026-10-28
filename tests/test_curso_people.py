@@ -1,5 +1,5 @@
 """The People Skills course (curso/people/): the checker accepts every written lesson, each question of the class
-mock exam is used in one lesson only, the core lessons fit in about two hours, and the checker rejects lessons that
+mock exam is used in one lesson only, the whole course fits in about an hour, and the checker rejects lessons that
 break the course's rules (a personal challenge without its criterion, the wrong number of challenges in the
 reference-sheet lesson, a mock exam with few questions, a cast from another course)."""
 
@@ -55,10 +55,10 @@ def test_each_mock_exam_question_is_used_once():
     assert all(1 <= q <= 100 for q in usos)
 
 
-def test_study_lessons_fit_in_about_two_hours():
-    """The reference sheet (aula 03) and the extra question bank (aula 11) come on top of the two hours."""
-    minutos = sum(_aula(p)["minutos"] for p in LICOES if p.stem not in ("aula-03", "aula-11"))
-    assert minutos <= 135
+def test_course_fits_in_about_an_hour():
+    """Lessons 01 to 10 (the reference sheet included); the extra question bank (aula 11) is optional."""
+    minutos = sum(_aula(p)["minutos"] for p in LICOES if p.stem != "aula-11")
+    assert minutos <= 70
 
 
 def _cartao(d, tipo, n=0):
@@ -68,8 +68,8 @@ def _cartao(d, tipo, n=0):
 @pytest.mark.parametrize("mutation, expected", [
     ("personal_without_criterion", "desafio pessoal sem critério"),
     ("sheet_with_one_challenge", "a aula da folha tem de 2 a 4"),
-    ("two_challenges_outside_the_sheet", "deve haver exatamente 1"),
-    ("mock_exam_with_few_questions", "(mínimo 10"),
+    ("two_challenges_outside_the_sheet", "no máximo 1 fora da aula da folha"),
+    ("mock_exam_with_few_questions", "(mínimo 4"),
     ("agent_in_the_comic", "precisa de quem"),
     ("challenge_is_not_open", "o desafio é um exercício 'aberta'"),
     ("term_used_before_explained", "usa 'lente' antes de explicá-lo"),
@@ -95,7 +95,9 @@ def test_broken_lessons_fail(tmp_path, mutation, expected):
         d["cartoes"][0]["texto"] += " No fim vem a lente."
         _cartao(d, "conceito")["texto"] += " Cada [[lente|um jeito de olhar o valor]] tem três opções."
     elif mutation == "repeated_answers_in_matching":
-        _cartao(d, "associar")["exercicio"]["pares"][1][1] = "Força"
+        d["cartoes"].insert(-1, {"tipo": "pratica", "exercicio": {
+            "tipo": "associar", "enunciado": "Associe cada item ao quadro da SWOT.", "explicacao": "Interno ou externo.",
+            "pares": [["Entrego antes do prazo", "Força"], ["Deixo mensagens sem resposta", "Força"], ["Cortaram estágios", "Ameaça"]]}})
     elif mutation == "html_in_text":
         _cartao(d, "conceito")["texto"] += " <b>Atenção</b>"
     p = tmp_path / "aula-03.js"
